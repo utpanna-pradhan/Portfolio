@@ -1,0 +1,22 @@
+.footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.footerleft:hover{
+    cursor: pointer;
+  
+}
+.footerright button:hover{
+    background-color: rgb(224, 224, 224);
+    /* color: white; */
+    border-color: transparent;
+}
+.icon_ {
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon_:hover {
+    transform: scale(1.2); 
+}
