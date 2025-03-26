@@ -14,7 +14,7 @@ export default function Experience() {
             setIsVisible(true);
             observer.unobserve(entry.target);
           }
-        });
+        }); 
       },
       { threshold: 0.1 }
     );
