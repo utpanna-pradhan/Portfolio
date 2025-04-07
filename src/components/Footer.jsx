@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom';
 
 import { FaLinkedin , FaGithub , FaFacebook , FaMedium , FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import ScrollToTop from "react-scroll-to-top";
 
 function Footer() {
+const handleclick = () =>{
+  window.screenTop(0,0)
+}
   return (
     <div className='footer bg-dark text-white p-5 d-flex gap-md-3 gap-5 justify-content-between align-items-center
     flex-md-row flex-column'>
@@ -42,11 +46,12 @@ function Footer() {
 
       </div>
       <div className="footerright">
-      <Link to="/Home">
-      <button className='fw-900'>
-            Back To Home
-        </button>
-      </Link>
+      <ScrollToTop smooth  viewBox="0 0 256 256"/>
+      {/* <Link to="/Home"> */}
+      {/* <button className='fw-900' onClick={handleclick}>
+            Back To Top
+        </button> */}
+      {/* </Link> */}
         
         
        

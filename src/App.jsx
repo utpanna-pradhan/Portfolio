@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Work from './components/Work';
 import Skills from './components/Skills';
 import './App.css';
+import Footer from './components/Footer';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,10 +28,11 @@ export default function App() {
           <Route path="/skills" element={<Skills />} />
         </Routes>
       </main>
-
+{/* 
       <footer className="footer">
         <p>© {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
-      </footer>
+      </footer> */}
+      <Footer />
     </div>
   );
 }
