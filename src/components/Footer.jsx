@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { FaLinkedin , FaGithub , FaFacebook , FaMedium , FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import ScrollToTop from "react-scroll-to-top";
+import { color } from 'framer-motion';
 
 function Footer() {
 const handleclick = () =>{
@@ -46,7 +47,7 @@ const handleclick = () =>{
 
       </div>
       <div className="footerright">
-      <ScrollToTop smooth  viewBox="0 0 256 256"/>
+      <ScrollToTop  smooth color='blue' height='15' width='15' />              
       {/* <Link to="/Home"> */}
       {/* <button className='fw-900' onClick={handleclick}>
             Back To Top
