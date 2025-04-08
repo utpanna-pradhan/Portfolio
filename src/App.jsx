@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Experience from './components/Experience';
 import Work from './components/Work';
 import Skills from './components/Skills';
+import Blogs from './components/Blogs';
 import './App.css';
 import Footer from './components/Footer';
 
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/work" element={<Work />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/blogs" element={<Blogs />} />
         </Routes>
       </main>
 {/* 

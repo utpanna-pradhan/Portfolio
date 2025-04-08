@@ -20,9 +20,9 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${darkMode ? 'dark' : ''}`}>
       <div className="nav-container">
-        <div className="logo">
+        {/* <div className="logo">
           <span>MyPortfolio</span>
-        </div>
+        </div> */}
         
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
           <NavLink 
@@ -53,6 +53,20 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
             onClick={() => setIsOpen(false)}
           >
             Skills
+          </NavLink>
+          <NavLink 
+            to="/blogs" 
+            className={({ isActive }) => isActive ? 'active' : ''}
+            onClick={() => setIsOpen(false)}
+          >
+          Blogs
+          </NavLink>
+          <NavLink 
+            to="/about" 
+            className={({ isActive }) => isActive ? 'active' : ''}
+            onClick={() => setIsOpen(false)}
+          >
+          About me
           </NavLink>
         </div>
 
