@@ -18,11 +18,9 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
   };
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${darkMode ? 'dark' : ''}`}>
+    <nav className="navbar" >
       <div className="nav-container">
-        {/* <div className="logo">
-          <span>MyPortfolio</span>
-        </div> */}
+       
         
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
           <NavLink 
@@ -61,23 +59,17 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
           >
           Blogs
           </NavLink>
-          <NavLink 
+          {/* <NavLink 
             to="/about" 
             className={({ isActive }) => isActive ? 'active' : ''}
             onClick={() => setIsOpen(false)}
           >
           About me
-          </NavLink>
+          </NavLink> */}
         </div>
 
         <div className="nav-actions">
-          <button 
-            className="toggle-btn" 
-            onClick={toggleDarkMode}
-            aria-label="Toggle dark mode"
-          >
-            {darkMode ? '☀️' : '🌙'}
-          </button>
+        
           <button 
             className="hamburger" 
             onClick={toggleMenu}

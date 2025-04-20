@@ -33,35 +33,43 @@ export default function Experience() {
   const experiences = [
     {
       id: 1,
-      title: "Frontend Developer",
+      title: "Frontend Developer Intern",
       period: "Heart it out (Dec 2024-Present)",
-      description: "Developing responsive user interfaces with React, implementing state management solutions, and optimizing frontend performance.",
-      tags: ["React", "TypeScript", "Redux", "GraphQL"],
+      description: "Currently i am developing responsive, user-friendly websites like:Event pages , Academy page , Reco engine , Feedback form , Therapist profile , multiple forms in Elementor , News letters , blogs etc . I collaborate with the team to enhance UI/UX , ensure seamless responsiveness across devices. Through this role, Iam gaining hands-on experience in front-end development and modernweb technologies.",
+      tags: ["React", "JavaScript", "Vuejs", "Bootstrap","API","Jquery","AJAX","Wordpress","Elementor","Oxygen Builder","CSS3","HTML5","POSTHOG","POSTMAN"],
       icon: "💻"
     },
     {
       id: 2,
-      title: "Web Developer",
-      period: "Digital Agency (2021-2024)",
-      description: "Built responsive websites for various clients, implemented CMS integrations, and improved site performance metrics.",
-      tags: ["JavaScript", "WordPress", "CSS3", "PHP"],
+      title: "Fullstack Developer Intern",
+      period: "Unified Mentor(OCt 2024 - Dec 2024)",
+      description: "Here I developed Full stack projects like:E-Gram Panchayat – A web-based system built to digitalize local governance services.Pet Simulator – An interactive application designed to simulate pet care and feeding",
+      tags: ["Reactjs","Jquery","JavaScript","Bootstrap5", "CSS3", "HTML5"],
       icon: "🌐"
     },
     {
       id: 3,
-      title: "Junior Developer",
-      period: "Tech Solutions (2019-2021)",
-      description: "Collaborated on web application development, fixed UI bugs, and contributed to feature implementation.",
-      tags: ["HTML5", "jQuery", "Bootstrap", "REST APIs"],
+      title: "Frontend Developer Intern",
+      period: "Salesqueen (June 2024- Sep 2024)",
+      description: "I developed fully responsive websites like Smart Hospital , Asset management ,HR record , Internview schedule , Candidate profile , Recruitment channel etc. Collaborated closely withthe development team and testers to ensure high-quality, user-friendly webexperiences",
+      tags: ["HTML5","CSS3","JavaScript", "jQuery", "Bootstrap",],
       icon: "👨‍💻"
     },
     {
       id: 4,
-      title: "Intern",
-      period: "Startup Inc. (Summer 2018)",
-      description: "Learned web development fundamentals, assisted senior developers, and completed small feature implementations.",
-      tags: ["HTML/CSS", "Git", "Responsive Design"],
+      title: "Web Developer Intern",
+      period: "Solar Secure (Apr 2024 - May 2024)",
+      description: "I developed FastFood Ecommerce website and several small projects like todo-list, Quiz games , Covid status ,Form validation , Counter ,Calculator etc . Gained hands-on experience in front-end and back-end development.",
+      tags: ["HTML","CSS", "JavaScript","AJAX","API","Nodejs" ],
       icon: "🎓"
+    },
+    {
+      id: 4,
+      title: "Web Developer Intern",
+      period: "Oretes PVT LTD",
+      description: "I developed a COVID-19 tracking website with features like real-time casetracking, vaccination slot availability, ICU ,oxygen cylinder and hospital status,with essential COVID-19 information and prevention . Built .Tthis project focused on providing userswith critical health data and resources .",
+      tags: ["Django","Python","HTML","CSS", "JavaScript" ],
+      icon: "💻"
     }
   ];
 

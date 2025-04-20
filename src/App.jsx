@@ -10,16 +10,11 @@ import './App.css';
 import Footer from './components/Footer';
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle('dark-mode');
-  };
 
   return (
-    <div className={`app ${darkMode ? 'dark' : 'light'}`}>
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+    <div className="app" >
+      <Navbar  />
       
       <main className="main-content">
         <Routes>
