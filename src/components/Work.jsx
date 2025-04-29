@@ -1,127 +1,158 @@
-import p1 from '../assets/p1.png';
-import p2 from '../assets/p2.png';
-import p3 from '../assets/p3.png';
-import p4 from '../assets/p4.png';
-import p5 from '../assets/p5.png';
-import p6 from '../assets/p6.png';
-import p7 from '../assets/p7.png';
-import p8 from '../assets/p8.png';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+// import { ExternalLink } from 'lucide-react';
+import ProjectCard from './ProjectCard';
+import ProjectFilter from './ProjectFilter';
+import '../stylesheet/Experience.css';
+import { ExternalLink } from 'lucide-react';
 
+// Project data
+const projects = [
+  {
+    id: 1,
+    img: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Interior Design Website",
+    description: "Fully responsive interior design website",
+    tags: ["React", "Framer-motion", "TailwindCSS"],
+    link: "https://architectural-studio-lab.vercel.app/"
+  },
+  {
+    id: 2,
+    img: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Heartitout Academy Page",
+    description: "Interactive page displaying upcoming events",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap5", "jQuery"],
+    link: "#"
+  },
+  {
+    id: 3,
+    img: "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Reco Engine",
+    description: "Finding the perfect therapist based on user input",
+    tags: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap5", "API"],
+    link: "#"
+  },
+  {
+    id: 4,
+    img: "https://images.pexels.com/photos/3182834/pexels-photo-3182834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Creative Portfolio",
+    description: "A customizable portfolio template for creatives",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "#"
+  },
+  {
+    id: 5,
+    img: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Digital Agency Site",
+    description: "Modern website for a digital marketing agency",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "#"
+  },
+  {
+    id: 6,
+    img: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "GitHub Profile Analyzer",
+    description: "Tool to analyze and visualize GitHub profiles",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://github-profile-analyzer-navy.vercel.app/"
+  },
+  {
+    id: 7,
+    img: "https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Real-time Chat App",
+    description: "Instant messaging app with modern interface",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://utpanna-pradhan.github.io/Chat_app/"
+  },
+  {
+    id: 8,
+    img: "https://images.pexels.com/photos/7675860/pexels-photo-7675860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Therapist Finder",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+  }
+];
 
-import '../stylesheet/Work.css';
-export default function Work() {
-  const projects = [
-    {
-      id: 1,
-      img:p1,
-   
-      title: "Interior Design website",
-      description: "Fully responsive interior design website",
-      tags: ["React", "Framer-motion","TailwindCSS"],
-      src:"https://architectural-studio-lab.vercel.app/"
-    },
-    {
-      id: 2,
-      img:p2,
-      title: "Heartitout Academy page",
-      description: "It shows all upcomming events",
-      tags: ["HTML","CSS", "JavaScript","Bootstrap5","Jquery"]
-    },
-    {
-      id: 3,
-      img:p3,
-      title: "Reco Engine",
-      description: "It helps to find perfect Therapist based on your input",
-      tags: ["HTML, CSS , JavaScript , Jquery , Bootstrap5 , API "]
-    },
-    {
-      id: 4,
-      img:p4,
-      title: "Portfolio Template",
-      description: "A customizable portfolio template for creatives.",
-      tags: ["HTML/CSS", "JavaScript"]
-    },
-    {
-      id: 5,
-      img:p5,
-      title: "Portfolio Template",
-      description: "A customizable portfolio template for creatives.",
-      tags: ["HTML/CSS", "JavaScript"]
-    },
-    {
-      id: 6,
-      img:p6,
-      title: "Portfolio Template",
-      description: "A customizable portfolio template for creatives.",
-      tags: ["HTML/CSS", "JavaScript"],
-      src:"https://github-profile-analyzer-navy.vercel.app/"
-    },
-    {
-      id: 7,
-      img:p7,
-      title: "Portfolio Template",
-      description: "A customizable portfolio template for creatives.",
-      tags: ["HTML/CSS", "JavaScript"],
-      src:"https://utpanna-pradhan.github.io/Chat_app/"
-    },
-    {
-      id: 8,
-      img:p8,
-      title: "Portfolio Template",
-      description: "A customizable portfolio template for creatives.",
-      tags: ["HTML/CSS", "JavaScript"],
-      src:"https://heartitout.in/jiya-therapist-finder-demo/"
+const Work = () => {
+  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [activeFilter, setActiveFilter] = useState('All');
+  const [isInView, setIsInView] = useState(false);
+
+  // Extract unique tags for filter options
+  const allTags = ['All', ...new Set(projects.flatMap(project => project.tags))];
+
+  const handleFilterChange = (filter) => {
+    setActiveFilter(filter);
+    
+    if (filter === 'All') {
+      setFilteredProjects(projects);
+    } else {
+      const filtered = projects.filter(project => 
+        project.tags.includes(filter)
+      );
+      setFilteredProjects(filtered);
     }
-  ];
+  };
+
+  useEffect(() => {
+    // Set in view after a small delay to trigger animations
+    const timer = setTimeout(() => {
+      setIsInView(true);
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <section className="gallery-section">
-     
-      <h1>My Projects</h1>
-      {/* <div className="grid-item">
-     
-     
+    <section className="work-section">
+      <div className="work-container">
+        <motion.h1 
+          className="work-title"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ 
+            duration: 0.8,
+            ease: [0.16, 1, 0.3, 1]
+          }}
+        >
+          My Work
+        </motion.h1>
         
-        <div className='Work_content '>
-        {projects.map(project => (
-          <div key={project.id} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="tags">
-              {project.tags.map(tag => (
-                <span key={tag}>{tag}</span>
-              ))}
-            </div>
-          <a href={project.src} target="_blank">
-          <button>Link</button>
-          </a> 
-          </div>
-        ))}
-        </div>
-       
-      </div> */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ 
+            duration: 0.8,
+            delay: 0.2,
+            ease: [0.16, 1, 0.3, 1]
+          }}
+        >
+          <ProjectFilter 
+            filters={allTags}
+            activeFilter={activeFilter}
+            onFilterChange={handleFilterChange}
+          />
+        </motion.div>
 
-<div className="gallery-grid">
- 
-        {projects.map((project) => (
-           <a href={project.src} target='_blank' >
-          <div className="gallery-item" key={project.id}>
-            <img src={project.img} alt={project.title} />
-           
-            <div className="overlay">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <p>{project.tags}</p>
-              {/* <a href= target='_blank' className='text-white'>Link</a> */}
-            
-            </div>
-          </div>
-          </a>
-        ))}
-        
+        <motion.div 
+          className="projects-grid"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          {filteredProjects.map((project, index) => (
+            <ProjectCard 
+              key={project.id}
+              project={project}
+              index={index}
+              isInView={isInView}
+            />
+          ))}
+        </motion.div>
       </div>
-    
-     
     </section>
   );
-}
+};
+
+export default Work;

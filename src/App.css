@@ -1,5 +1,6 @@
 /* Base Styles */
 @import "tailwindcss";
+@import "tailwindcss";
 
 :root {
     --primary-color: #3498db;
