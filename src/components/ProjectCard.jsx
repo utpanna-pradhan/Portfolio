@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
+import '../stylesheet/Work.css';
 
 const ProjectCard = ({ project, index, isInView }) => {
   return (

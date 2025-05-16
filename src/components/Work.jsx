@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-// import { ExternalLink } from 'lucide-react';
+
 import ProjectCard from './ProjectCard';
 import ProjectFilter from './ProjectFilter';
 import '../stylesheet/Experience.css';
-import { ExternalLink } from 'lucide-react';
+import '../stylesheet/Work.css';
+import img1 from '../assets/Screenshot (595).png';
+import img2 from '../assets/Screenshot (596).png';
+
 
 // Project data
 const projects = [
-  {
-    id: 1,
-    img: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  { 
+    id: 1, 
+    img: img1,
     title: "Interior Design Website",
     description: "Fully responsive interior design website",
     tags: ["React", "Framer-motion", "TailwindCSS"],
@@ -18,11 +21,11 @@ const projects = [
   },
   {
     id: 2,
-    img: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: img2,
     title: "Heartitout Academy Page",
     description: "Interactive page displaying upcoming events",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap5", "jQuery"],
-    link: "#"
+    link: "https://heartitout.in/academy/"
   },
   {
     id: 3,
@@ -48,7 +51,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     link: "#"
   },
-  {
+  { 
     id: 6,
     img: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "GitHub Profile Analyzer",
