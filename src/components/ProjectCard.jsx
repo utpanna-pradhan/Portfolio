@@ -20,7 +20,7 @@ const ProjectCard = ({ project, index, isInView }) => {
       }}
     >
       <div className="project-image-container">
-        <img src={project.img} alt={project.title} className="project-image" />
+        <img src={project.img} alt={project.title} className="project-image" loading='lazy'/>
         <div className="project-overlay">
           {project.link && (
             <a 

@@ -7,7 +7,20 @@ import '../stylesheet/Experience.css';
 import '../stylesheet/Work.css';
 import img1 from '../assets/Screenshot (595).png';
 import img2 from '../assets/Screenshot (596).png';
-
+import img3 from '../assets/Screenshot (597).png';
+import img4 from '../assets/Screenshot (598).png';
+import img5 from '../assets/Screenshot (599).png';
+import img6 from '../assets/Screenshot (600).png';
+import img7 from '../assets/Screenshot (601).png';
+import img8 from '../assets/Screenshot (602).png';
+import img9 from '../assets/Screenshot (603).png';
+import img10 from '../assets/Screenshot (604).png';
+import img11 from '../assets/428276273-20cabb62-0443-4081-a547-d02c55209650.png';
+import img12 from '../assets/Screenshot (605).png';
+import img13 from '../assets/Screenshot (606).png';
+import img14 from '../assets/Screenshot (607).png';
+import img15 from '../assets/Screenshot (608).png';
+import img16 from '../assets/Screenshot (609).png';
 
 // Project data
 const projects = [
@@ -29,31 +42,31 @@ const projects = [
   },
   {
     id: 3,
-    img: "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: img3,
     title: "Reco Engine",
     description: "Finding the perfect therapist based on user input",
     tags: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap5", "API"],
-    link: "#"
+    link: "https://happyminds.in/therapist-recommendation/"
   },
   {
     id: 4,
-    img: "https://images.pexels.com/photos/3182834/pexels-photo-3182834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Creative Portfolio",
+    img: img4,
+    title: "Heartit out Jiya Therapist",
     description: "A customizable portfolio template for creatives",
     tags: ["HTML", "CSS", "JavaScript"],
-    link: "#"
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
   },
   {
     id: 5,
-    img: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Digital Agency Site",
+    img: img5,
+    title: "Heartitout Blog page",
     description: "Modern website for a digital marketing agency",
     tags: ["HTML", "CSS", "JavaScript"],
-    link: "#"
+    link: "https://heartitout.in/blogs/"
   },
   { 
     id: 6,
-    img: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: img6,
     title: "GitHub Profile Analyzer",
     description: "Tool to analyze and visualize GitHub profiles",
     tags: ["HTML", "CSS", "JavaScript"],
@@ -61,20 +74,102 @@ const projects = [
   },
   {
     id: 7,
-    img: "https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Real-time Chat App",
+    img: img7,
+    title: "Static Chat App",
     description: "Instant messaging app with modern interface",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://utpanna-pradhan.github.io/Chat_app/"
   },
   {
     id: 8,
-    img: "https://images.pexels.com/photos/7675860/pexels-photo-7675860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: img8,
+    title: "Vue project",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://utpanna-pradhan.github.io/Vue/"
+  },
+
+  {
+    id: 9,
+    img: img9,
+    title: "Text Manipulation Editor",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://utpanna-pradhan.github.io/Text_Manipulation_Editor/"
+  },
+  {
+    id: 10,
+    img: img10,
     title: "Therapist Finder",
     description: "Interactive tool to connect with mental health professionals",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://heartitout.in/jiya-therapist-finder-demo/"
-  }
+  },
+  {
+    id: 11,
+    img: img11,
+    title: "Therapist Finder",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+  },
+    {
+    id: 11,
+    img: img11,
+    title: "Therapist Finder",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+  },
+    {
+    id: 12,
+    img: img12,
+    title: "Therapist Finder",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+  },
+    {
+    id: 13,
+    img: img13,
+    title: "Therapist Finder",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+  },
+    {
+    id: 14,
+    img: img14,
+    title: "Therapist Finder",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+  },
+    {
+    id: 15,
+    img: img15,
+    title: "Therapist Finder",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+  },
+    {
+    id: 16,
+    img: img16,
+    title: "Therapist Finder",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+  },
+    {
+    id: 11,
+    img: img11,
+    title: "Therapist Finder",
+    description: "Interactive tool to connect with mental health professionals",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+  },
+
 ];
 
 const Work = () => {
