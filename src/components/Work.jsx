@@ -100,31 +100,24 @@ const projects = [
   {
     id: 10,
     img: img10,
-    title: "Therapist Finder",
+    title: "Form Validation",
     description: "Interactive tool to connect with mental health professionals",
     tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+    link: "https://utpanna-pradhan.github.io/Formvalidation/"
   },
   {
     id: 11,
     img: img11,
-    title: "Therapist Finder",
+    title: "User Management",
     description: "Interactive tool to connect with mental health professionals",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://heartitout.in/jiya-therapist-finder-demo/"
   },
-    {
-    id: 11,
-    img: img11,
-    title: "Therapist Finder",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://heartitout.in/jiya-therapist-finder-demo/"
-  },
+   
     {
     id: 12,
     img: img12,
-    title: "Therapist Finder",
+    title: "Weather API",
     description: "Interactive tool to connect with mental health professionals",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://heartitout.in/jiya-therapist-finder-demo/"
@@ -132,7 +125,7 @@ const projects = [
     {
     id: 13,
     img: img13,
-    title: "Therapist Finder",
+    title: "Bolt Portfolio",
     description: "Interactive tool to connect with mental health professionals",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://heartitout.in/jiya-therapist-finder-demo/"
@@ -140,7 +133,7 @@ const projects = [
     {
     id: 14,
     img: img14,
-    title: "Therapist Finder",
+    title: "Dynamic Meet link change",
     description: "Interactive tool to connect with mental health professionals",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://heartitout.in/jiya-therapist-finder-demo/"
@@ -148,7 +141,7 @@ const projects = [
     {
     id: 15,
     img: img15,
-    title: "Therapist Finder",
+    title: "Pet Simulator",
     description: "Interactive tool to connect with mental health professionals",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://heartitout.in/jiya-therapist-finder-demo/"
@@ -156,7 +149,7 @@ const projects = [
     {
     id: 16,
     img: img16,
-    title: "Therapist Finder",
+    title: "E gramm panchayat",
     description: "Interactive tool to connect with mental health professionals",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://heartitout.in/jiya-therapist-finder-demo/"
