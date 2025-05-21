@@ -1,19 +1,36 @@
 import React from "react";
 import presentation from "../assets/presentation.png";
 import blog2 from "../assets/Adobe Express - file.png";
+import blog3 from "../assets/create a coding image where a girl is intensly code and the image should be cartoon .jpeg";
+import blog4 from "../assets/Website Creator-cuate.png";
+import blog5 from "../assets/Source code-pana.png";
 
 import "../stylesheet/Blogs.css";
 import { motion } from "framer-motion";
 
 const blogData = [
-  {
-    id: 1,
-    image: blog2,
-    title: "How I Started Learning Frontend Development",
+      {
+    id: 5,
+    image: blog5,
+    title: "How To Run Html file and Basic HTML Elements,Tags,Attributes — A Beginner’s Guide(Part 2)",
     description: ["Learning One Thing at a Time.", "Making Small Goals"],
-    link: "https://medium.com/@utpanna828/how-i-started-learning-frontend-development-1b120352a0ec",
+    link: "https://medium.com/@utpanna828/how-to-run-html-file-and-basic-html-elements-tags-attributes-a-beginners-guide-part-2-1359e2e51495",
   },
-  {
+    {
+    id: 4,
+    image: blog4,
+    title: "Introduction to HTML: A Beginner’s Guide (Part 1)",
+    description: ["Learning One Thing at a Time.", "Making Small Goals"],
+    link: "https://medium.com/@utpanna828/introduction-to-html-a-beginners-guide-part-1-79afd94f314d",
+  },
+    {
+    id: 3,
+    image: blog3,
+    title: "Everything You Need to Know About Web Development in 2025",
+    description: ["Learning One Thing at a Time.", "Making Small Goals"],
+    link: "https://medium.com/@utpanna828/%EF%B8%8F-everything-you-need-to-know-about-web-development-in-2025-51c14c65f212",
+  },
+    {
     id: 2,
     image: presentation,
     title: "Scroll to the Top of the Page-Easy Way (in React.js)",
@@ -24,24 +41,34 @@ const blogData = [
     link: "https://medium.com/@utpanna828/scroll-to-the-top-of-the-page-the-easy-way-in-react-js-b2c140a296d9",
   },
   {
-    id: 3,
+    id: 1,
     image: blog2,
     title: "How I Started Learning Frontend Development",
     description: ["Learning One Thing at a Time.", "Making Small Goals"],
     link: "https://medium.com/@utpanna828/how-i-started-learning-frontend-development-1b120352a0ec",
   },
-  {
-    id: 3,
-    image: blog2,
-    title: "How I Started Learning Frontend Development",
-    description: ["Learning One Thing at a Time.", "Making Small Goals"],
-    link: "https://medium.com/@utpanna828/how-i-started-learning-frontend-development-1b120352a0ec",
-  },
+
+
+
+
 ];
 
 const Blogs = () => {
   return (
     <>
+    <div>
+       <motion.h1 
+               className="blog-title"
+               initial={{ opacity: 0, y: 20 }}
+               animate={{ opacity: 1, y: 0 }}
+               transition={{ 
+                 duration: 0.8,
+                 ease: [0.16, 1, 0.3, 1]
+               }}
+             >
+              Blog Section
+             </motion.h1>
+    </div>
       {blogData.map((blog, index) => (
         <motion.div
           key={blog.id}
@@ -67,7 +94,7 @@ const Blogs = () => {
                 <a href={blog.link} target="_blank" rel="noopener noreferrer">
                   <motion.button
                     type="button"
-                    className="btn btn-dark mt-3"
+                    className="btn btn-primary mt-3"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >

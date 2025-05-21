@@ -1,3 +1,5 @@
+import '../stylesheet/Work.css';
+import { motion } from 'framer-motion';
 export default function Skills() {
     const skills = [
       { name: "Nextjs", level: 80 },
@@ -18,7 +20,17 @@ export default function Skills() {
   
     return (
       <section className="page skills">
-        <h1>My Skills</h1>
+          <motion.h1 
+               className="skill-title"
+               initial={{ opacity: 0, y: 20 }}
+               animate={{ opacity: 1, y: 0 }}
+               transition={{ 
+                 duration: 0.8,
+                 ease: [0.16, 1, 0.3, 1]
+               }}
+             >
+               My Skills
+             </motion.h1>
         <div className="skills-container">
           {skills.map(skill => (
             <div key={skill.name} className="skill-item">

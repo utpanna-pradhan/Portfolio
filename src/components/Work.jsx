@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import ProjectCard from './ProjectCard';
 import ProjectFilter from './ProjectFilter';
-import '../stylesheet/Experience.css';
+// import '../stylesheet/Experience.css';
 import '../stylesheet/Work.css';
 import img1 from '../assets/Screenshot (595).png';
 import img2 from '../assets/Screenshot (596).png';
@@ -28,8 +28,8 @@ const projects = [
     id: 1, 
     img: img1,
     title: "Interior Design Website",
-    description: "Fully responsive interior design website",
-    tags: ["React", "Framer-motion", "TailwindCSS"],
+    description: "Fully responsive interior design website with a bunch of their work and career section",
+    tags: ["React", "Framer-motion", "TailwindCSS","Bootstrap5"],
     link: "https://architectural-studio-lab.vercel.app/"
   },
   {
@@ -52,31 +52,31 @@ const projects = [
     id: 4,
     img: img4,
     title: "Heartit out Jiya Therapist",
-    description: "A customizable portfolio template for creatives",
-    tags: ["HTML", "CSS", "JavaScript"],
+    description: "AI featured therapist finder which will help you navigate and find the perfect match",
+    tags: ["HTML", "CSS", "JavaScript","Bootstrap","Jquery","API"],
     link: "https://heartitout.in/jiya-therapist-finder-demo/"
   },
   {
     id: 5,
     img: img5,
     title: "Heartitout Blog page",
-    description: "Modern website for a digital marketing agency",
-    tags: ["HTML", "CSS", "JavaScript"],
+    description: "Responsive heart it out Mental Health blog section categorized with mental health topics",
+    tags: ["HTML", "CSS", "JavaScript","Bootstrap","Jquery"],
     link: "https://heartitout.in/blogs/"
   },
   { 
     id: 6,
     img: img6,
     title: "GitHub Profile Analyzer",
-    description: "Tool to analyze and visualize GitHub profiles",
-    tags: ["HTML", "CSS", "JavaScript"],
+    description: "Enter your github user name and it will return all of your git-hub contribution in calender and card format with pagination ",
+    tags: ["Vite","React","Bootstrap5","API","Typescript"],
     link: "https://github-profile-analyzer-navy.vercel.app/"
   },
   {
     id: 7,
     img: img7,
     title: "Static Chat App",
-    description: "Instant messaging app with modern interface",
+    description: "Static Chat Application",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://utpanna-pradhan.github.io/Chat_app/"
   },
@@ -198,6 +198,8 @@ const Work = () => {
   return (
     <section className="work-section">
       <div className="work-container">
+
+        
         <motion.h1 
           className="work-title"
           initial={{ opacity: 0, y: 20 }}

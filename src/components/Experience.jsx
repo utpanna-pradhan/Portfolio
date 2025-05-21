@@ -123,7 +123,7 @@ export default function Experience() {
           ease: [0.16, 1, 0.3, 1]
         }}
       >
-        My Professional Journey
+        My Experience
       </motion.h1>
 
       <div className="timeline" ref={timelineRef}>

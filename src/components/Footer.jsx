@@ -47,7 +47,7 @@ const handleclick = () =>{
 
       </div>
       <div className="footerright">
-      <ScrollToTop  smooth color='blue' height='15' width='15' />              
+      <ScrollToTop  smooth />              
       {/* <Link to="/Home"> */}
       {/* <button className='fw-900' onClick={handleclick}>
             Back To Top
