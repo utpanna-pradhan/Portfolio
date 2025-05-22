@@ -2,15 +2,21 @@ import '../stylesheet/Work.css';
 import { motion } from 'framer-motion';
 export default function Skills() {
     const skills = [
+       { name: "GenAI", level: 90 },
       { name: "Nextjs", level: 80 },
-      { name: "Express", level: 70 },
-      { name: "GenAI", level: 90 },
-      { name: "Python", level: 80 },
-      { name: "Reactjs", level: 90 },
+       { name: "Reactjs", level: 90 },
       { name: "Vuejs", level: 80 },
+      { name: "Express", level: 70 },
+      { name: "Django", level: 70 },
+      { name: "Python", level: 80 },
+      { name: "SQL", level: 70 },
+     
+      
+     
       { name: "API", level: 80 },
       { name: "JSON", level: 90 },
       { name: "AJAX", level: 80 },
+       { name: "Jquery", level: 90 },
       { name: "TailwindCSS", level: 100 },
       { name: "Bootstrap5", level: 100 },
       { name: "JavaScript", level: 95 },

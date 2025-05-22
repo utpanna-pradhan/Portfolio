@@ -37,8 +37,11 @@ const ProjectCard = ({ project, index, isInView }) => {
       </div>
       
       <div className="project-info">
+        
         <h3 className="project-title">{project.title}</h3>
         <p className="project-description">{project.description}</p>
+        
+        
         
         <div className="project-tags">
           {project.tags.map((tag, idx) => (

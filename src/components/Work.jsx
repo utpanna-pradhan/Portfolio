@@ -28,7 +28,7 @@ const projects = [
     id: 1, 
     img: img1,
     title: "Interior Design Website",
-    description: "Fully responsive interior design website with a bunch of their work and career section",
+    description: "It's a fully responsive interior design website with a bunch of their work ,blogs and career section",
     tags: ["React", "Framer-motion", "TailwindCSS","Bootstrap5"],
     link: "https://architectural-studio-lab.vercel.app/"
   },
@@ -76,16 +76,16 @@ const projects = [
     id: 7,
     img: img7,
     title: "Static Chat App",
-    description: "Static Chat Application",
-    tags: ["HTML", "CSS", "JavaScript"],
+    description: "A static chat app that features a clean UI for seamless message display.",
+    tags: ["React", "Bootstrap ", "Redux"],
     link: "https://utpanna-pradhan.github.io/Chat_app/"
   },
   {
     id: 8,
     img: img8,
     title: "Vue project",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
+    description: "A Vue.js application where selecting a category triggers an API call to fetch relevant data, displayed using cards also it has interactive Owl Carousel. This project highlights dynamic content loading, smooth category-based filtering, and responsive carousel integration.",
+    tags: ["vue","Bootstrap5","API"],
     link: "https://utpanna-pradhan.github.io/Vue/"
   },
 
@@ -93,24 +93,24 @@ const projects = [
     id: 9,
     img: img9,
     title: "Text Manipulation Editor",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
+    description: "A Text Manipulation Editor that allows users to transform text with features like copy, uppercase, lowercase, capitalize, bold, and italic etc.",
+    tags: ["React"],
     link: "https://utpanna-pradhan.github.io/Text_Manipulation_Editor/"
   },
   {
     id: 10,
     img: img10,
     title: "Form Validation",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
+    description: "A Form Validation project that validates user inputs in real-time for fields like name, email, password, and more. It demonstrates custom error handling, input feedback, and dynamic UI updates without using any libraries.",
+    tags: ["HTML", "CSS", "Vanilla js"],
     link: "https://utpanna-pradhan.github.io/Formvalidation/"
   },
   {
     id: 11,
     img: img11,
     title: "User Management",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
+    description: "It includes functionality for login, pagination, search,alert,modal, edit, and delete operations ",
+    tags: ["React", "Axios", "Bootstrap5"],
     link: "https://heartitout.in/jiya-therapist-finder-demo/"
   },
    

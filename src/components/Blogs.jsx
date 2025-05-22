@@ -13,21 +13,21 @@ const blogData = [
     id: 5,
     image: blog5,
     title: "How To Run Html file and Basic HTML Elements,Tags,Attributes — A Beginner’s Guide(Part 2)",
-    description: ["Learning One Thing at a Time.", "Making Small Goals"],
+    description: ["In this second part of the series, I’ll cover:"],
     link: "https://medium.com/@utpanna828/how-to-run-html-file-and-basic-html-elements-tags-attributes-a-beginners-guide-part-2-1359e2e51495",
   },
     {
     id: 4,
     image: blog4,
     title: "Introduction to HTML: A Beginner’s Guide (Part 1)",
-    description: ["Learning One Thing at a Time.", "Making Small Goals"],
+    description: ["When you open any website, behind the scenes, it all begins with HTML. Whether you’re browsing your favorite social media site or reading a blog like this one"],
     link: "https://medium.com/@utpanna828/introduction-to-html-a-beginners-guide-part-1-79afd94f314d",
   },
     {
     id: 3,
     image: blog3,
     title: "Everything You Need to Know About Web Development in 2025",
-    description: ["Learning One Thing at a Time.", "Making Small Goals"],
+    description: ["Web development is the backbone of the internet. Whether you’re browsing your favorite online store, using a social media platform, or reading this article"],
     link: "https://medium.com/@utpanna828/%EF%B8%8F-everything-you-need-to-know-about-web-development-in-2025-51c14c65f212",
   },
     {
@@ -87,7 +87,7 @@ const Blogs = () => {
               </a>
 
               <div className="content ps-4 pe-4">
-                <h5 className="pb-3">{blog.title}</h5>
+                <h4 className="pb-3">{blog.title}</h4>
                 {blog.description.map((desc, idx) => (
                   <p key={idx} className="mb-0">{desc}</p>
                 ))}
