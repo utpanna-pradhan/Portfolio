@@ -37,7 +37,7 @@ const projects = [
     img: img2,
     title: "Heartitout Academy Page",
     description: "Interactive page displaying upcoming events",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap5", "jQuery"],
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap5", "Jquery"],
     link: "https://heartitout.in/academy/"
   },
   {
@@ -45,7 +45,7 @@ const projects = [
     img: img3,
     title: "Reco Engine",
     description: "Finding the perfect therapist based on user input",
-    tags: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap5", "API"],
+    tags: ["HTML", "CSS", "JavaScript", "Jquery", "Bootstrap5", "API"],
     link: "https://happyminds.in/therapist-recommendation/"
   },
   {
@@ -53,7 +53,7 @@ const projects = [
     img: img4,
     title: "Heartit out Jiya Therapist",
     description: "AI featured therapist finder which will help you navigate and find the perfect match",
-    tags: ["HTML", "CSS", "JavaScript","Bootstrap","Jquery","API"],
+    tags: ["HTML", "CSS", "JavaScript","Bootstrap5","Jquery","API"],
     link: "https://heartitout.in/jiya-therapist-finder-demo/"
   },
   {
@@ -61,35 +61,42 @@ const projects = [
     img: img5,
     title: "Heartitout Blog page",
     description: "Responsive heart it out Mental Health blog section categorized with mental health topics",
-    tags: ["HTML", "CSS", "JavaScript","Bootstrap","Jquery"],
+    tags: ["HTML", "CSS", "JavaScript","Bootstrap5","Jquery"],
     link: "https://heartitout.in/blogs/"
+  },
+      {
+    id: 13,
+    img: img13,
+    title: "Bolt Portfolio",
+    description: "It's a portfolio website built using Bolt, React, and Three.js, featuring smooth animations, interactive 3D elements, and a modern responsive design. It showcases projects and skills with an immersive and engaging user experience.",
+    tags: ["React js","Bolt","Bootstrap5"],
+    link: "https://bolt-portfolio-wheat.vercel.app/"
   },
   { 
     id: 6,
     img: img6,
     title: "GitHub Profile Analyzer",
     description: "Enter your github user name and it will return all of your git-hub contribution in calender and card format with pagination ",
-    tags: ["Vite","React","Bootstrap5","API","Typescript"],
+    tags: ["React js","Bootstrap5","API","Typescript"],
     link: "https://github-profile-analyzer-navy.vercel.app/"
   },
-  {
-    id: 7,
-    img: img7,
-    title: "Static Chat App",
-    description: "A static chat app that features a clean UI for seamless message display.",
-    tags: ["React", "Bootstrap ", "Redux"],
-    link: "https://utpanna-pradhan.github.io/Chat_app/"
+   {
+    id: 15,
+    img: img15,
+    title: "Virtual Pet Simulator",
+    description: "Virtual Pet Simulator A fun interactive web application where users take care of a virtual pet. Users can feed, play with, and put the pet to sleep, while managing its hunger, happiness, and energy levels.",
+    tags: ["HTML", "CSS", "JavaScript","Bootstrap5"],
+    link: "https://utpanna-pradhan.github.io/Pet-simulator/"
   },
-  {
-    id: 8,
-    img: img8,
-    title: "Vue project",
-    description: "A Vue.js application where selecting a category triggers an API call to fetch relevant data, displayed using cards also it has interactive Owl Carousel. This project highlights dynamic content loading, smooth category-based filtering, and responsive carousel integration.",
-    tags: ["vue","Bootstrap5","API"],
-    link: "https://utpanna-pradhan.github.io/Vue/"
+    {
+    id: 16,
+    img: img16,
+    title: "Digital E gramm panchayat",
+    description: "Digital E Gram Panchayat is a project aimed at digitizing rural government services for better citizen engagement and ease of access.",
+    tags: ["HTML", "CSS", "JavaScript","Firebase"],
+    link: "https://utpanna-pradhan.github.io/Digital_E_GramPanchayat/"
   },
-
-  {
+    {
     id: 9,
     img: img9,
     title: "Text Manipulation Editor",
@@ -97,6 +104,44 @@ const projects = [
     tags: ["React"],
     link: "https://utpanna-pradhan.github.io/Text_Manipulation_Editor/"
   },
+    {
+    id: 11,
+    img: img11,
+    title: "User Management",
+    description: "It includes functionality for login, pagination, search,alert,modal, edit, and delete operations ",
+    tags: ["React js", "Axios", "Bootstrap5"],
+    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+  },
+      {
+    id: 12,
+    img: img12,
+    title: "Weather API",
+    description: "It allows users to search for any city and view real-time weather information",
+    tags: ["HTML", "CSS", "JavaScript","API","Bootstrap5"],
+    link: "https://utpanna-pradhan.github.io/weatherAPI/"
+  },
+  {
+    id: 7,
+    img: img7,
+    title: "Static Chat App",
+    description: "A static chat app that features a clean UI for seamless message display.",
+    tags: ["React js", "Bootstrap5 ", "Redux"],
+    link: "https://utpanna-pradhan.github.io/Chat_app/"
+  },
+  {
+    id: 8,
+    img: img8,
+    title: "Vue project",
+    description: "A Vue.js application where selecting a category triggers an API call to fetch relevant data, displayed using cards also it has interactive Owl Carousel. This project highlights dynamic content loading, smooth category-based filtering, and responsive carousel integration.",
+    tags: ["vue js","Bootstrap5","API"],
+    link: "https://utpanna-pradhan.github.io/Vue/"
+  },
+
+
+
+
+   
+
   {
     id: 10,
     img: img10,
@@ -105,63 +150,16 @@ const projects = [
     tags: ["HTML", "CSS", "Vanilla js"],
     link: "https://utpanna-pradhan.github.io/Formvalidation/"
   },
-  {
-    id: 11,
-    img: img11,
-    title: "User Management",
-    description: "It includes functionality for login, pagination, search,alert,modal, edit, and delete operations ",
-    tags: ["React", "Axios", "Bootstrap5"],
-    link: "https://heartitout.in/jiya-therapist-finder-demo/"
-  },
-   
-    {
-    id: 12,
-    img: img12,
-    title: "Weather API",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://heartitout.in/jiya-therapist-finder-demo/"
-  },
-    {
-    id: 13,
-    img: img13,
-    title: "Bolt Portfolio",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://heartitout.in/jiya-therapist-finder-demo/"
-  },
     {
     id: 14,
     img: img14,
     title: "Dynamic Meet link change",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://heartitout.in/jiya-therapist-finder-demo/"
+    description: "A simple web application that dynamically displays a meeting link based on the email entered. The meeting link updates in real-time, allowing different users to get personalized links.",
+    tags: ["HTML", "CSS", "JavaScript","Bootstrap5"],
+    link: "https://utpanna-pradhan.github.io/Dynamic-link-change/"
   },
-    {
-    id: 15,
-    img: img15,
-    title: "Pet Simulator",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://heartitout.in/jiya-therapist-finder-demo/"
-  },
-    {
-    id: 16,
-    img: img16,
-    title: "E gramm panchayat",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://heartitout.in/jiya-therapist-finder-demo/"
-  },
-    {
-    id: 11,
-    img: img11,
-    title: "Therapist Finder",
-    description: "Interactive tool to connect with mental health professionals",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://heartitout.in/jiya-therapist-finder-demo/"
-  },
+   
+
 
 ];
 
