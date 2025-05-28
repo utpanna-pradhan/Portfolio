@@ -1,5 +1,5 @@
 import React from "react";
-import presentation from "/src/assets/presentation.png";
+import blog6 from "/src/assets/blog6.png";
 import blog2 from "../assets/Adobe Express - file.png";
 import blog3 from "../assets/create a coding image where a girl is intensly code and the image should be cartoon .jpeg";
 import blog4 from "../assets/Website Creator-cuate.png";
@@ -32,7 +32,7 @@ const blogData = [
   },
     {
     id: 2,
-    image: presentation,
+    image: blog6,
     title: "Scroll to the Top of the Page-Easy Way (in React.js)",
     description: [
       "Improves user experience (no more painful scrolling).",
