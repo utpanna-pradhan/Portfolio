@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Blogs from './components/Blogs';
 import './App.css';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 export default function App() {
 
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
 {/* 

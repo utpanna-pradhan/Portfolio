@@ -29,7 +29,7 @@ const projects = [
     img: img1,
     title: "Interior Design Website",
     description: "It's a fully responsive interior design website with a bunch of their work ,blogs and career section",
-    tags: ["React", "Framer-motion", "TailwindCSS","Bootstrap5"],
+    tags: ["React js", "Framer-motion", "TailwindCSS","Bootstrap5"],
     link: "https://architectural-studio-lab.vercel.app/"
   },
   {
@@ -101,7 +101,7 @@ const projects = [
     img: img9,
     title: "Text Manipulation Editor",
     description: "A Text Manipulation Editor that allows users to transform text with features like copy, uppercase, lowercase, capitalize, bold, and italic etc.",
-    tags: ["React"],
+    tags: ["React js"],
     link: "https://utpanna-pradhan.github.io/Text_Manipulation_Editor/"
   },
     {

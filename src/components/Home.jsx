@@ -10,13 +10,13 @@ export default function Home() {
       sequence={[
         
         'A passionate Developer',
-        2000, 
+        1500, 
         'A passionate Freelancer',
-        2000,
+        1500,
         'A passionate Technical Writer',
-        2000,
+        1500,
         'A passionate Learner',
-        2000
+        1500
       ]}
       wrapper="span"
       speed={50}
@@ -33,8 +33,10 @@ export default function Home() {
        <a href="/work">
        <button>
         View My Work</button></a>
+       {/* <a href="/contact">
+         <button>Contact Me</button>
+       </a> */}
       
-        <button>Contact Me</button>
       </div>
     </section>
   );
