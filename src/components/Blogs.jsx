@@ -1,5 +1,5 @@
 import React from "react";
-import presentation from "../assets/presentation.png";
+import presentation from "/src/assets/presentation.png";
 import blog2 from "../assets/Adobe Express - file.png";
 import blog3 from "../assets/create a coding image where a girl is intensly code and the image should be cartoon .jpeg";
 import blog4 from "../assets/Website Creator-cuate.png";
