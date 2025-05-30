@@ -1,4 +1,4 @@
-import { Link } from 'lucide-react';
+import {Link} from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
@@ -29,10 +29,10 @@ export default function Home() {
       
      
       <div className="cta mt-4">
-      
-       <a href="/work">
-       <button>
-        View My Work</button></a>
+        <Link to="/work">
+  <button>View My Work</button>
+</Link>
+    
        {/* <a href="/contact">
          <button>Contact Me</button>
        </a> */}
