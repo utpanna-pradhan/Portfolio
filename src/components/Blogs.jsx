@@ -6,11 +6,19 @@ import blog2 from "../assets/Adobe Express - file.png";
 import blog3 from "../assets/create a coding image where a girl is intensly code and the image should be cartoon .jpeg";
 import blog4 from "../assets/Website Creator-cuate.png";
 import blog5 from "../assets/Source code-pana.png";
+import blog7 from "../assets/blog3.webp";
 
 import "../stylesheet/Blogs.css";
 import { motion } from "framer-motion";
 
 const blogData = [
+   {
+    id: 6,
+    image: blog7,
+    title: "HTML Elements Explained: Headings, Links, Images, Lists, Tables & Forms— A Beginner’s Guide(Part 3)",
+    description: ["In this third part of the series, I’ll cover:Some of the most essential HTML elements.."],
+    link: "https://medium.com/@utpanna828/html-elements-explained-headings-links-images-lists-tables-forms-a-beginners-guide-part-f3adfe273b29",
+  },
       {
     id: 5,
     image: blog5,
