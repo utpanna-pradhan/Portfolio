@@ -12,9 +12,58 @@ import "../stylesheet/Blogs.css";
 import { motion } from "framer-motion";
 
 const blogData = [
+     {
+    id: 13,
+    image: blog13,
+    title: "Part 10: Accessibility & HTML Best Practices (Build for Everyone!)",
+    description: ["In this third part of the series, I’ll cover:Some of the most essential HTML elements.."],
+    link: "https://medium.com/@utpanna828/part-10-accessibility-html-best-practices-build-for-everyone-828ede004568",
+  },
+     {
+    id: 12,
+    image: blog12,
+    title: "Part 9: Embeds & External Content",
+    description: ["In this third part of the series, I’ll cover:Some of the most essential HTML elements.."],
+    link: "https://medium.com/@utpanna828/part-9-embeds-external-content-b7e3173c416e",
+  },
+     {
+    id: 11,
+    image: blog11,
+    title: "Part 8: Meta Tags & SEO Basics",
+    description: ["In this third part of the series, I’ll cover:Some of the most essential HTML elements.."],
+    link: "https://medium.com/@utpanna828/part-8-meta-tags-seo-basics-527caf664111",
+  },
+     {
+    id: 10,
+    image: blog10,
+    title: "Part 7: Advanced Input Types & Attributes",
+    description: ["In this third part of the series, I’ll cover:Some of the most essential HTML elements.."],
+    link: "https://medium.com/@utpanna828/part-7-advanced-input-types-attributes-3d8f5a47f58b",
+  },
+     {
+    id: 9,
+    image: blog9,
+    title: "Part 6: Semantic HTML — The Meaning Behind Structure",
+    description: ["In this third part of the series, I’ll cover:Some of the most essential HTML elements.."],
+    link: "https://medium.com/@utpanna828/part-6-semantic-html-the-meaning-behind-structure-0bfb9df1b780",
+  },
+     {
+    id: 8,
+    image: blog8,
+    title: "Up Next — Part 5: More Useful HTML Tags (With Examples + Questions)",
+    description: ["In this third part of the series, I’ll cover:Some of the most essential HTML elements.."],
+    link: "https://medium.com/@utpanna828/up-next-part-5-more-useful-html-tags-with-examples-questions-22834ed63b92",
+  },
+     {
+    id: 7,
+    image: blog7,
+    title: "Part 4 -HTML Elements( Dive into More HTML Tags)",
+    description: ["In this third part of the series, I’ll cover:Some of the most essential HTML elements.."],
+    link: "https://medium.com/@utpanna828/html-elements-part-4-dive-into-more-html-tags-7ca5111a4fac",
+  },
    {
     id: 6,
-    image: blog7,
+    image: blog6,
     title: "HTML Elements Explained: Headings, Links, Images, Lists, Tables & Forms— A Beginner’s Guide(Part 3)",
     description: ["In this third part of the series, I’ll cover:Some of the most essential HTML elements.."],
     link: "https://medium.com/@utpanna828/html-elements-explained-headings-links-images-lists-tables-forms-a-beginners-guide-part-f3adfe273b29",
