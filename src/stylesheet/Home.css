@@ -1,3 +1,50 @@
 .home{
-	  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #000000 100%);
+	  background-color: black;
+	  height: 100vh;
+	  	display: flex;
+	
+
+	align-items: center;
+	margin: 0 auto;
+	padding: 50px;
+} 
+.left{
+	color: #ffffff;
+	    width: 100%;
+
+}
+.home_Content{
+	position: absolute;
+	z-index: 1;
+	top: 40%;
+	left: 10%;
+	transform: translateY(-50%);
+  max-width: 90%;
+}
+/* .myname{
+	font-size: 4rem;
+
+}
+.my_profession{
+	font-size: 3rem;
+} */
+.myname {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+.my_profession {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+@media screen and (max-width: 668px) {
+  .home_Content {
+    left: 5%;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+
+  .home_button {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }

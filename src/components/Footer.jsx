@@ -12,7 +12,7 @@ const handleclick = () =>{
   window.screenTop(0,0)
 }
   return (
-    <div className='footer bg-dark text-white p-5 d-flex gap-md-3 gap-5 justify-content-between align-items-center
+    <div className='footer  text-white p-5 d-flex gap-md-3 gap-5 justify-content-between align-items-center
     flex-md-row flex-column'>
       <div className="footerleft d-flex flex-row gap-md-5 gap-4">
       

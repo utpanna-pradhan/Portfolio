@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import '../stylesheet/nav.css';
 
 export default function Navigation({ darkMode, toggleDarkMode }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,13 +46,7 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
           >
             Work
           </NavLink>
-          <NavLink 
-            to="/skills" 
-            className={({ isActive }) => isActive ? 'active' : ''}
-            onClick={() => setIsOpen(false)}
-          >
-            Skills
-          </NavLink>
+         
           <NavLink 
             to="/blogs" 
             className={({ isActive }) => isActive ? 'active' : ''}
@@ -59,13 +54,14 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
           >
           Blogs
           </NavLink>
-          {/* <NavLink 
-            to="/about" 
+           <NavLink 
+            to="/contact" 
             className={({ isActive }) => isActive ? 'active' : ''}
             onClick={() => setIsOpen(false)}
           >
-          About me
-          </NavLink> */}
+            Contact 
+          </NavLink> 
+         
         </div>
 
         <div className="nav-actions">

@@ -1,0 +1,211 @@
+[
+      {
+    "id": 23,
+   "title": "Part 1:Basic JavaScriptTheory Questions",
+    "description": "1. What is JavaScript?JavaScript is a lightweight.....",
+    "link": "https://medium.com/@utpanna828/part-1-basic-javascripttheory-questions-2f7aceb6d8a2",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*IeFBZy0HJru3wig3cEJo3Q.png",
+    "date": "16 hours ago",
+    "category":"question-answer"
+  },
+      {
+    "id": 22,
+    "title": "Controlled and Uncontrolled Components in React.js?",
+    "description": "When working with forms in React, you’ll often come across two terms: controlled  .....",
+    "link": "https://medium.com/@utpanna828/controlled-and-uncontrolled-components-in-react-js-45ed397eef8f",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*FIK8CFDj0qcJUbDLNup23A.jpeg",
+    "date": "4 days ago",
+    "category":"learning"
+  },
+      {
+    "id": 21,
+    "title": "Part 3:Advance CSS Theory Questions",
+    "description": "What is the Shadow DOM and how is it used in HTML? Shadow DO .....",
+    "link": "https://medium.com/@utpanna828/part-3-advance-css-theory-questions-88ba87f5ebb2",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*yQErEuqZFovw6P5kiH9SWA.png",
+    "date": "6 days ago",
+    "category":"question-answer"
+  },
+      {
+    "id": 20,
+    "title": "Part 2:Intermediate CSS Theory Questions",
+    "description": "When you open any website, behind the scenes, it all begins with HTML. Whether you’re .....",
+    "link": "https://medium.com/@utpanna828/part-2-intermediate-css-theory-questions-06004aa78948",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*rM8t0CGxBDN6eaJGgJyJwA.png",
+    "date": "6 days ago",
+    "category":"question-answer"
+  },
+      {
+    "id": 19,
+    "title": "Part 1:Basic CSS Theory Questions",
+    "description": "1. What does CSS stand for? .....",
+    "link": "https://medium.com/@utpanna828/part-1-basic-css-theory-questions-2c574ddb1ef7",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*psUMNRQC6-K_XFEnUMJo3A.jpeg",
+    "date": "Jun 26, 2025",
+    "category":"question-answer"
+  },
+      {
+    "id": 18,
+    "title": "Git & GitHub Cheatsheet — For Beginners",
+    "description": "What is Git?It is a popular version control  .....",
+    "link": "https://medium.com/@utpanna828/git-github-cheatsheet-for-beginners-8893048b0426",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*mtsk3fQ_BRemFidhkel3dA.png",
+    "date": "Jun 24, 2025",
+    "category":"learning"
+  },
+      {
+    "id": 17,
+    "title": "Speed Up Your CSS Workflow with a Custom VS Code Snippet",
+    "description": "Do you find yourself writing the same CSS reset in every project? .....",
+    "link": "https://medium.com/@utpanna828/speed-up-your-css-workflow-with-a-custom-vs-code-snippet-14abe5616018",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*uLdTTYhbSaLQEaE3WSjfqg.jpeg",
+    "date": "Jun 21, 2025",
+    "category":"learning"
+  },
+      {
+    "id": 16,
+    "title": "Part 3: Advanced HTML Theory Questions (With Easy Answers)",
+    "description": "1.What is the purpose of the sandbox attribute in <iframe>? .....",
+    "link": "https://medium.com/@utpanna828/part-3-advanced-html-theory-questions-with-easy-answers-0c25dcb2b3d8",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*Pw2LqM_vYu-MotfxZNW4lw.png",
+    "date": "Jun 21, 2025",
+    "category":"question-answer"
+  },
+      {
+    "id": 15,
+    "title": "Part 2: Intermediate HTML Theory Questions (With Easy Answers)",
+    "description": "What is a DOCTYPE and why is it important?....",
+    "link": "https://medium.com/@utpanna828/part-2-intermediate-html-theory-questions-with-easy-answers-c3229f8ddb85",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*7HTD3BhoCi4ciC7hi11e4Q.jpeg",
+    "date": "Jun 21, 2025",
+    "category":"question-answer"
+  },
+      {
+    "id": 14,
+    "title": "Part 1:Basic HTML Theory Questions",
+    "description": "1.What is HTML? HTML (HyperText Markup Language) is .....",
+    "link": "https://medium.com/@utpanna828/part-11-100-basic-html-theory-questions-with-easy-answers-c0e341b6794f",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*7TpZ9GzUpGEvJddU3K6jRg.png",
+    "date": "Jun 16, 2025",
+    "category":"question-answer"
+  },
+  {
+    "id": 13,
+    "title": "Part 10: Accessibility & HTML Best Practices",
+    "description": "Welcome to the final essential chapter of our HTML series! .....",
+    "link": "https://medium.com/@utpanna828/part-10-accessibility-html-best-practices-build-for-everyone-828ede004568",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*KJD95VP69cpPvXyQLz7nHg.jpeg",
+    "date": "Jun 13, 2025",
+    "category":"learning"
+  },
+       {
+    "id": 12,
+    "title": "Part 9: Embeds & External Content",
+    "description": "Need to show YouTube videos, maps, or third-party tools on your site? HTML makes this easy.....",
+    "link": "https://medium.com/@utpanna828/part-9-embeds-external-content-b7e3173c416e",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GtEZ6pfVxKw8wfxtAdZ6IA.png",
+    "date": "Jun 13, 2025",
+    "category":"learning"
+  },
+       {
+    "id": 11,
+    "title": "Part 8: Meta Tags & SEO Basics",
+    "description": "Meta tags go inside <head> and help with SEO, performance, and mobile-friendliness.....",
+    "link": "https://medium.com/@utpanna828/part-8-meta-tags-seo-basics-527caf664111",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*0fYq3K4T7EwIkclZgOlXHQ.png",
+    "date": "Jun 13, 2025",
+    "category":"learning"
+  },
+       {
+    "id": 10,
+    "title": "Part 7: Advanced Input Types & Attributes",
+    "description": "Modern HTML forms are smarter than ever! Here are HTML5 input  .....",
+    "link": "https://medium.com/@utpanna828/part-7-advanced-input-types-attributes-3d8f5a47f58b",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*zD36YBklfRDErjcZOvnafA.png",
+    "date": "Jun 11, 2025",
+    "category":"learning"
+  },
+       {
+    "id": 9,
+    "title": "Part 6: Semantic HTML — The Meaning Behind Structure",
+    "description": "HTML5 introduced semantic elements to describe the meaning of  .....",
+    "link": "https://medium.com/@utpanna828/part-6-semantic-html-the-meaning-behind-structure-0bfb9df1b780",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*d-VYXGx6f8KGeduhZkGQyw.jpeg",
+    "date": "Jun 11, 2025",
+    "category":"learning"
+  },
+       {
+    "id": 8,
+    "title": "Part 5: More Useful HTML Tags (With Examples + Questions)",
+    "description": "In this part of the series, we’ll explore even more useful HTML .....",
+    "link": "https://medium.com/@utpanna828/up-next-part-5-more-useful-html-tags-with-examples-questions-22834ed63b92",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*pNjhSQQaIvHw9KeSC2zzFg.png",
+    "date": "Jun 11, 2025",
+    "category":"learning"
+  },
+       {
+    "id": 7,
+    "title": "Part 4 -HTML Elements( Dive into More HTML Tags)",
+    "description": "1. <div> :Container Box .....",
+    "link": "https://medium.com/@utpanna828/html-elements-part-4-dive-into-more-html-tags-7ca5111a4fac",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*q-CEp_PPoeU2CsczmU0fsA.jpeg",
+    "date": "Jun 6, 2025",
+    "category":"learning"
+  },
+       {
+    "id": 6,
+    "title": "Part3 -HTML Elements Explained: Headings, Links, Images, Lists, Tables & Forms",
+    "description": "In this third part of the series, I’ll cover:Some of  .....",
+    "link": "https://medium.com/@utpanna828/html-elements-explained-headings-links-images-lists-tables-forms-a-beginners-guide-part-f3adfe273b29",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*wASw40OQ-nAWjKrJshLDcQ.png",
+    "date": "May 30, 2025",
+    "category":"learning"
+  },
+       {
+    "id": 5,
+    "title": "Part 2-How To Run Html file and Basic HTML Elements,Tags,Attributes — ",
+    "description": "In this second part of the series, I’ll cover:How to Run an HTML .....",
+    "link": "https://medium.com/@utpanna828/how-to-run-html-file-and-basic-html-elements-tags-attributes-a-beginners-guide-part-2-1359e2e51495",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*hKpuluk9ubymy3LwRIcNBQ.png",
+    "date": "May 13, 2025",
+    "category":"learning"
+  },
+      {
+    "id": 4,
+    "title": "Part 1-Introduction to HTML: A Beginner’s Guide",
+    "description": "When you open any website, behind the scenes, it all begins with HTML. Whether you’re .....",
+    "link": "https://medium.com/@utpanna828/introduction-to-html-a-beginners-guide-part-1-79afd94f314d",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*a2s9B9HjF0eNjVi4_xjAEA.png",
+    "date": "May 12, 2025",
+    "category":"learning"
+  },
+    {
+    "id": 3,
+    "title": "Everything You Need to Know About Web Development in 2025",
+    "description": "Web development is the backbone of the internet. Whether you’re browsing your favorite .....",
+    "link": "https://medium.com/@utpanna828/%EF%B8%8F-everything-you-need-to-know-about-web-development-in-2025-51c14c65f212",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*0MAJUSM6xToE4MgWhyxTwg.jpeg",
+    "date": "May 1, 2025",
+    "category":"learning"
+  },
+    {
+    "id": 2,
+    "title": "📜Scroll to the Top of the Page-Easy Way (in React.js)",
+    "description": "Why Add a Scroll-To-Top Feature?Improves user experience (no more painful .....",
+    "link": "https://medium.com/@utpanna828/scroll-to-the-top-of-the-page-the-easy-way-in-react-js-b2c140a296d9",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*1a31ETUw6TTVFwMpvwPy4A.png",
+    "date": "Apr 8, 2025",
+    "category":"learning"
+  },
+  {
+    "id": 1,
+    "title": "How I Started Learning Frontend Development",
+    "description": "I made a complete mess of my learning process. Instead of progressing step by step.....",
+    "link": "https://medium.com/@utpanna828/how-i-started-learning-frontend-development-1b120352a0ec",
+    "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*X0PikLPiuRBtyz1JRS7bjQ.png",
+    "date": "Feb 23, 2025",
+    "category":"learning"
+  }
+
+ 
+]

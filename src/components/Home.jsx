@@ -1,60 +1,83 @@
 // import {Link} from 'react-router-dom';
-// import { TypeAnimation } from 'react-type-animation';
-import '../stylesheet/Home.css';
+
+import "../stylesheet/Home.css";
+import RotatingText from "./TextAnimations/RotatingText/RotatingText.jsx";
+import Particles from "./Backgrounds/Particles/Particles.jsx";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-//     <section className="page home">
-// <h4>Hello I'm Utpanna </h4>
-// <h4 className='text-primary'>
-//  <TypeAnimation
-//       sequence={[
-        
-//         'A passionate Developer',
-//         1500, 
-//         'A passionate Freelancer',
-//         1500,
-//         'A passionate Technical Writer',
-//         1500,
-//         'A passionate Learner',
-//         1500
-//       ]}
-//       wrapper="span"
-//       speed={50}
-//       style={{ fontSize: '2em', display: 'inline-block' }}
-//       repeat={Infinity}
-//     />
-// </h4>
+    <div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <div
+          className="bg_particle"
+          style={{ width: "100%", height: "600px", position: "relative" }}
+        >
+          <Particles
+            particleColors={["#ffffff", "#ffffff"]}
+            particleCount={200}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={100}
+            moveParticlesOnHover={true}
+            alphaParticles={false}
+            disableRotation={false}
+          />
 
+          <div className="home_Content d-flex flex-column  justify-content-start align-items-center">
+            <div>
+              <h1 className="myname text-white dancing_script">
+                Utpanna Pradhan
+              </h1>
+              <RotatingText
+                className="my_profession font-bold text-white dancing_script"
+                texts={[
+                  "Frontend Developer",
+                  "Technical Writer",
+                  "Freelancer",
+                  "Learner",
+                ]}
+                mainClassName="px-2 sm:px-2 md:px-3  text-white fs-1 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-start rounded-lg"
+                staggerFrom={"last"}
+                initial={{ y: "100%" }}
+                animate={{ y: 0 }}
+                exit={{ y: "-120%" }}
+                staggerDuration={0.025}
+                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                rotationInterval={2500}
+              />
+              <div className="home_button mt-4 d-flex  justify-content-start align-align-items-start md:align-items-center gap-4">
+                <Link to="/contact">
+                  <button className="btn btn-primary text-black fw-700 fs-5 ps-3 pe-3 pt-2 pb-2">
+                    Connect with me
+                  </button>
+                </Link>
+                {/* <Link to ="../assets/utpanna pradhan cv 2025.pdf" >
+             <button className="btn btn-light text-black fw-bold fs-4 font-bold ps-4 pe-4 pt-2 pb-2">
+                CV
+              </button>
+             </Link> */}
+                <a
+                  href="../assets/utpanna pradhan cv 2025.pdf"
+                  download
+                  className="btn btn-light  fw-700 fs-5 ps-3 pe-3 pt-2 pb-2"
+                >
+                  CV
+                </a>
+              </div>
+            </div>
+          </div>
 
-      
-     
-//       <div className="cta mt-4">
-//         <Link to="/work">
-//   <button>View My Work</button>
-// </Link>
-    
-//        {/* <a href="/contact">
-//          <button>Contact Me</button>
-//        </a> */}
-      
-//        </div>
-//     </section>
-    <div className='home'>
-      <div className="row">
-        <div className="col-md-10">
-            <div className="sectionleft">
-          <h1>Utpanna Pradhan</h1>
-          <p>Frontend Developer , Freelancer , Blogger , Learner</p>
-          <button>Connect with me</button>
-      </div>
+          <div></div>
         </div>
-        <div className="col-md-2">
-              <div className="sectionright"></div>
-        </div>
-      </div>
-      
-    
+      </motion.div>
     </div>
   );
 }

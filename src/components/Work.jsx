@@ -210,7 +210,7 @@ const Work = () => {
   }, []);
 
   return (
-    <section className="work-section">
+    <section className="work-section p-4">
       <div className="work-container">
 
         
