@@ -48,3 +48,11 @@
     gap: 1rem;
   }
 }
+
+
+.blob_svg{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	
+}

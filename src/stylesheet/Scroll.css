@@ -1,0 +1,50 @@
+.outer {
+  overflow: hidden;
+  width: 100%; 
+  margin-bottom: 100px;
+}
+
+.scroll-track {
+  width: 100%;
+  width: fit-content;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 25px;
+  padding: 0px;
+  animation: scroll 20s linear infinite;
+}
+
+.scroll-content:hover {
+  animation-play-state: paused;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  border-radius: 18px;
+  border: 1px solid rgb(235, 237, 238); 
+  box-shadow: 5px 0px 0px rgb(226, 226, 226);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  
+  object-fit: contain;
+  flex-shrink: 0; 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 668px){
+    img {
+  width: 130px;
+  height: 130px;}
+}

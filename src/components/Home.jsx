@@ -5,10 +5,11 @@ import RotatingText from "./TextAnimations/RotatingText/RotatingText.jsx";
 import Particles from "./Backgrounds/Particles/Particles.jsx";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Infiniteskillscroll from "./Infiniteskillscroll.jsx";
 
 export default function Home() {
   return (
-    <div>
+    <div className="mt-4">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +18,7 @@ export default function Home() {
       >
         <div
           className="bg_particle"
-          style={{ width: "100%", height: "600px", position: "relative" }}
+          style={{ width: "100%", height: "400px", position: "relative" }}
         >
           <Particles
             particleColors={["#ffffff", "#ffffff"]}
@@ -74,9 +75,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <div></div>
         </div>
+           <Infiniteskillscroll />
       </motion.div>
     </div>
   );
