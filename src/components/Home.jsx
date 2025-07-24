@@ -31,20 +31,23 @@ export default function Home() {
             disableRotation={false}
           />
 
-          <div className="home_Content d-flex flex-column  justify-content-start align-items-center">
+          <div className="home_Content d-flex flex-row justify-content-between gap-5 align-items-center mt-4 mb-4">
+              <div>
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/025/279/587/small_2x/3d-laptop-and-program-code-development-web-coding-concept-coding-screen-3d-rendering-3d-rendering-of-laptop-3d-render-illustration-png.png" alt="" width={300}/>
+            </div>
             <div>
-              <h1 className="myname text-white dancing_script">
+              <h1 className="myname dancing_script">
                 Utpanna Pradhan
               </h1>
               <RotatingText
-                className="my_profession font-bold text-white dancing_script"
+                className="my_profession font-bold dancing_script"
                 texts={[
                   "Frontend Developer",
                   "Technical Writer",
                   "Freelancer",
                   "Learner",
                 ]}
-                mainClassName="px-2 sm:px-2 md:px-3  text-white fs-1 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-start rounded-lg"
+                mainClassName="px-2 sm:px-2 md:px-3  fs-1 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-start rounded-lg"
                 staggerFrom={"last"}
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
@@ -56,7 +59,7 @@ export default function Home() {
               />
               <div className="home_button mt-4 d-flex  justify-content-start align-align-items-start md:align-items-center gap-4">
                 <Link to="/contact">
-                  <button className="btn btn-primary text-black fw-700 fs-5 ps-3 pe-3 pt-2 pb-2">
+                  <button className="btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2">
                     Connect with me
                   </button>
                 </Link>
@@ -68,12 +71,13 @@ export default function Home() {
                 <a
                   href="../assets/utpanna pradhan cv 2025.pdf"
                   download
-                  className="btn btn-light  fw-700 fs-5 ps-3 pe-3 pt-2 pb-2"
+                  className="btn cv_btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2"
                 >
                   CV
                 </a>
               </div>
             </div>
+          
           </div>
         </div>
            <Infiniteskillscroll />

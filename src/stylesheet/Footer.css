@@ -3,14 +3,20 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  border-top: 0.5px solid rgb(139, 139, 139);
+  border-top: 0.3px solid #f8ddb5;
 }
 .footerleft:hover{
     cursor: pointer;
   
 }
+.footerright .topbtn svg{
+
+  /* background-color: #b64605 !important; */
+    fill:  #b64605 !important;
+        margin-left: 5px !important;
+}
 .footerright button:hover{
-    background-color: rgb(224, 224, 224);
+    
     /* color: white; */
     border-color: transparent;
 }

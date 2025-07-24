@@ -1,17 +1,25 @@
 /* Base Navbar Styling */
 .navbar {
-  background-color: black;
-  border-bottom: 0.5px solid rgb(139, 139, 139);
+   background-color: #0f0f0f;
+  /* background-color: black; */
+  border-bottom: 0.3px solid #f8ddb5;
+  
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding: 8px;
+} 
+.signature-text {
+  font-family: 'Great Vibes', cursive; 
+  font-size: 3em; 
+  color:#b64605;
+  text-shadow: 1px 1px 2px #f8ddb5; 
 }
-
 .nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   padding: 15px 20px;
 }
 
@@ -24,7 +32,7 @@
 }
 
 .nav-links a {
-  color: #ffffff;
+  color: #f8ddb5;
   font-size: 19px;
   text-decoration: none;
   transition: transform 0.3s ease-in-out, color 0.3s;
@@ -32,10 +40,16 @@
 
 .nav-links a:hover {
   transform: scale(1.05);
+   text-shadow: 1px 1px 2px #b64605; 
 }
 
 .nav-links a.active {
-  color: rgb(13, 108, 185);
+  /* color: rgb(13, 108, 185); */
+  color:#b64605;
+  font-weight: bold;
+   text-shadow: 1px 1px 1px #f8ddb5; 
+ 
+ 
 }
 
 /* Hamburger Button */
@@ -71,3 +85,5 @@
     display: flex;
   }
 }
+
+

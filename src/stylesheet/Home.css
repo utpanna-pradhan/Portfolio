@@ -8,11 +8,7 @@
 	margin: 0 auto;
 	padding: 50px;
 } 
-.left{
-	color: #ffffff;
-	    width: 100%;
 
-}
 .home_Content{
 	position: absolute;
 	z-index: 1;
@@ -20,20 +16,27 @@
 	left: 10%;
 	transform: translateY(-50%);
   max-width: 90%;
+  color: #f8ddb5;
+  /* color: #b64605; */
 }
-/* .myname{
-	font-size: 4rem;
 
-}
-.my_profession{
-	font-size: 3rem;
-} */
 .myname {
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  color: #b64605;
+   text-shadow: 1px 1px 2px #f8ddb5; 
 }
 
 .my_profession {
   font-size: clamp(1.5rem, 4vw, 3rem);
+}
+.home_button button{
+	background-color:#b64605 ;
+	color: #f8ddb5;
+	
+}
+.cv_btn{
+	background-color: #f8ddb5;
+	color: #b64605;
 }
 @media screen and (max-width: 668px) {
   .home_Content {
@@ -50,9 +53,3 @@
 }
 
 
-.blob_svg{
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	
-}

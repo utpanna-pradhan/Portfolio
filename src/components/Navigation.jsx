@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../stylesheet/nav.css';
+import { motion } from "framer-motion";
+
 
 export default function Navigation({ darkMode, toggleDarkMode }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +21,18 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
   };
 
   return (
-    <nav className="navbar" >
+    <>
+   
+    <motion.nav
+  initial={{ y: -80, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+  <nav className="navbar d-flex flex-row justify-content-between" >
+    <div>
+           <p class="signature-text mb-0">Utpanna</p>
+    </div>
+
       <div className="nav-container">
        
         
@@ -76,5 +89,11 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
         </div>
       </div>
     </nav>
+
+
+</motion.nav>
+    
+    </>
+  
   );
 }
