@@ -3,7 +3,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  border-top: 0.3px solid #f8ddb5;
+  border-top: 0.3px solid   #b5cefc;
 }
 .footerleft:hover{
     cursor: pointer;
@@ -12,7 +12,7 @@
 .footerright .topbtn svg{
 
   /* background-color: #b64605 !important; */
-    fill:  #b64605 !important;
+    fill: #4f8afa !important;
         margin-left: 5px !important;
 }
 .footerright button:hover{
@@ -26,4 +26,10 @@
 
 .icon_:hover {
     transform: scale(1.2); 
+}
+.footer_link{
+    color: #cfdef8 ;
+}
+.footer{
+    color: #dde6f7;
 }

@@ -13,35 +13,42 @@
 	position: absolute;
 	z-index: 1;
 	top: 40%;
-	left: 10%;
+	left: 10%; 
 	transform: translateY(-50%);
   max-width: 90%;
-  color: #f8ddb5;
-  /* color: #b64605; */
+  color:#dde6f7;
+  /* color:  #4f8afa; */
 }
 
 .myname {
   font-size: clamp(2.8rem, 6vw, 5rem);
-  color: #b64605;
-   text-shadow: 1px 1px 2px #f8ddb5; 
+  color:  #4f8afa;
+   text-shadow: 1px 1px 2px #dde6f7; 
 }
 
 .my_profession {
   font-size: clamp(1.5rem, 4vw, 3rem);
 }
 .home_button button{
-	background-color:#b64605 ;
-	color: #f8ddb5;
+	background-color: #4f8afa ;
+	color:#dde6f7;
 	
 }
 .cv_btn{
-	background-color: #f8ddb5;
-	color: #b64605;
+	background-color:#dde6f7;
+	color:  #4f8afa;
 }
-@media screen and (max-width: 668px) {
+.home_left_img{
+  order: 1;
+}
+.home_right_content{
+order: 2;
+}
+@media screen and (max-width: 770px) {
   .home_Content {
-    left: 5%;
-    top: 40%;
+      top: 50%;
+    left: 30%;
+      max-width: 100%;
     transform: translateY(-40%);
   }
 
@@ -50,6 +57,13 @@
     align-items: flex-start;
     gap: 1rem;
   }
+ .home_left_img{
+  order: 2;
+}
+.home_right_content{
+order: 1;
+}
+
 }
 
 

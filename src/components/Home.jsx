@@ -31,11 +31,11 @@ export default function Home() {
             disableRotation={false}
           />
 
-          <div className="home_Content d-flex flex-row justify-content-between gap-5 align-items-center mt-4 mb-4">
-              <div>
+          <div className="home_Content d-flex flex-column flex-md-row justify-content-center justify-content-md-between gap-5 align-items-center mt-4 mb-4">
+              <div className="home_left_img ">
               <img src="https://static.vecteezy.com/system/resources/thumbnails/025/279/587/small_2x/3d-laptop-and-program-code-development-web-coding-concept-coding-screen-3d-rendering-3d-rendering-of-laptop-3d-render-illustration-png.png" alt="" width={300}/>
             </div>
-            <div>
+            <div className=" home_right_content">
               <h1 className="myname dancing_script">
                 Utpanna Pradhan
               </h1>

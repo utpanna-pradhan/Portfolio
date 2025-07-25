@@ -19,7 +19,7 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+ 
   return (
     <>
    

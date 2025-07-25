@@ -26,8 +26,8 @@
   border-radius: 18px;
   /* border: 1px solid  #f8ddb5 ; 
   box-shadow: 5px 0px 0px #b64605 ; */
-  border-bottom: 1px solid #b64605;
-  border-top: 1px solid #b64605;
+  border-bottom: 1px solid  #4f8afa;
+  border-top: 1px solid  #4f8afa;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,8 +46,11 @@
     transform: translateX(-50%);
   }
 }
-@media screen and (max-width: 668px){
+@media screen and (max-width: 770px){
    .scroll_img{
   width: 130px;
   height: 130px;}
+  .outer {
+    margin-top: 200px;
+  }
 }

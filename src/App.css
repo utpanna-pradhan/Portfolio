@@ -22,4 +22,8 @@ body{
 
 .app{
   background-color: black;
+    background-color: rgb(9, 17, 24);
+}
+.main-content{
+ padding-top: 90px;
 }

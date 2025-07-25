@@ -1,25 +1,28 @@
 /* Base Navbar Styling */
 .navbar {
-   background-color: #0f0f0f;
-  /* background-color: black; */
-  border-bottom: 0.3px solid #f8ddb5;
-  
-  position: sticky;
+  background-color: rgba(13, 27, 42, 0.5);
+
+  border-bottom: 0.3px solid #b5cefc;
+
+  position: fixed;
+  width: 100vw;
   top: 0;
   z-index: 1000;
   padding: 8px;
-} 
+  backdrop-filter: blur(10px);
+}
 .signature-text {
-  font-family: 'Great Vibes', cursive; 
-  font-size: 3em; 
-  color:#b64605;
-  text-shadow: 1px 1px 2px #f8ddb5; 
+  font-family: "Great Vibes", cursive;
+  font-size: 3em;
+
+  color: #4f8afa;
+  text-shadow: 0.5px 0.5px 0.5px #b5cefc;
 }
 .nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
+
   padding: 15px 20px;
 }
 
@@ -32,7 +35,7 @@
 }
 
 .nav-links a {
-  color: #f8ddb5;
+  color: #faf9f6;
   font-size: 19px;
   text-decoration: none;
   transition: transform 0.3s ease-in-out, color 0.3s;
@@ -40,16 +43,14 @@
 
 .nav-links a:hover {
   transform: scale(1.05);
-   text-shadow: 1px 1px 2px #b64605; 
+  color: #4f8afa;
+  text-shadow: 0.5px 0.5px 0.5px #b5cefc;
 }
 
 .nav-links a.active {
-  /* color: rgb(13, 108, 185); */
-  color:#b64605;
   font-weight: bold;
-   text-shadow: 1px 1px 1px #f8ddb5; 
- 
- 
+  color: #4f8afa;
+  text-shadow: 0.5px 0.5px 0.5px #b5cefc;
 }
 
 /* Hamburger Button */
@@ -67,14 +68,15 @@
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    
   }
 
   .nav-links {
     position: absolute;
-    top: 65px;
+    top: 90px;
     left: 0;
     right: 0;
-    background-color: black;
+    background-color: rgba(13, 27, 42, 0.966);
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
@@ -85,5 +87,3 @@
     display: flex;
   }
 }
-
-
