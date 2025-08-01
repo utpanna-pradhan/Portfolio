@@ -13,6 +13,7 @@
   top: 30%;
   left: 5%;
   color: rgb(12, 12, 12);
+  
   font-size: 70px;
   font-weight: 700;
   font-family: "IBM Plex Mono", monospace;
@@ -79,6 +80,7 @@
   flex-direction: column;
   flex-grow: 1;
   height: 100%;
+  
 }
 .blog_card_content h4,
 .blog_card_content p {
@@ -89,7 +91,7 @@
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 17px;
-  background:  #363232;
+  background:  #4f8afa;
     /* color: rgb(41, 35, 35); */
   color: rgb(255, 255, 255);
   padding: 9px 17px;
@@ -151,11 +153,10 @@ a {
   border-bottom-right-radius: 18px;
   border-bottom-left-radius: 18px;
 }
-.pinkfontcolor{
-   color:  #F4C2C2
-}
+
 .latest_blog_content {
-  color: white;
+   color: #d6e2f8;
+  
   padding: 0px 35px; 
 }
 .latest_blog_left_thumbnail {
@@ -174,15 +175,16 @@ a {
   margin: 20px;
   text-align: center;
   color: white;
+  
 }
 
 .button-28 {
   appearance: none;
-  background-color: white;
+  background-color:  #b5cefc;
   border: 2px solid #1a1a1a;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #3b3b3b;
+  color: #1f1e1e;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -213,7 +215,7 @@ a {
   /* color: #221e1e;
   background-color:  #F4C2C2; */
   color: #fff;
-  background-color: rgba(83, 82, 82, 0.219);
+  background-color: #4f8afa;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
@@ -224,7 +226,7 @@ a {
 }
 
 .active-button{
-  background:  #363232;
+  background:  #4f8afa;
 color: white;
 }
 @keyframes fly-1 {
@@ -276,11 +278,7 @@ color: white;
     font-size: 16px;
     padding: 12px;
   }
-  /* .latest_blog,
-  .parent_blog,
-  .blog_category {
-    margin: 0px 10px;
-  } */
+
 
   .blog_card_content {
     padding: 10px;
@@ -290,6 +288,9 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .latest_blog_content{
+    margin-top: 50px;
   }
 }
 
@@ -313,10 +314,27 @@ color: white;
     width: 100%;
     margin: 20px 0;
   }
+  .blog_category {
+    flex-direction: column;
+  }
 }
 
 
-
+@media screen and (max-width: 600px){
+  
+  .blog-desc {
+    top: 36%;
+  }
+}
+@media screen and (max-width: 415px){
+  .blog-title {
+    top: 21%;
+  font-size: 28px;}
+  .blog-desc {
+    top: 30%;
+    font-size: 13px;
+  }
+}
 
 
 

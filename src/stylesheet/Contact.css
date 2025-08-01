@@ -1,81 +1,9 @@
-/* .contact_container{
-    width: 100%;
-    height: 100vh;
-    color: white;
-}
-::placeholder{
-   
-    color: #dbd5d575;
-}
-input{
-    padding: 10px 0px;
-    border-bottom: 1px solid gray;
-    width: 65%;
-    margin-bottom: 20px;
-}
-textarea{
-      padding: 0px 0px;
-    border-bottom: 1px solid gray;
-    width: 65%;
-     margin-bottom: 20px;
-}
-.contact_sub_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-       height: 100vh;
-}
 
-
-
-.success-text {
-  color: green;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.sofiafont{
-     
-        font-family: "Dancing Script", cursive; 
-     
-}
-.contact_containerh1{
-    font-size: 5rem;
-   
-}
-.right_contact_inner_img{
-    position: relative;
-    z-index: 0;
-}
-.right_contact_top_content{
-    z-index: 1;
-    position: absolute;
-    top: 45%;
-   right: 18%;
-}
-
-.sendmsg_Btn{
-    padding: 15px 25px;
-    border:1px solid white;
-    border-radius: 18px;
-    background-color: #F4C2C2;
-    outline: none;
-    font-weight: 700;
-    color: rgb(41, 31, 31);
-    transition: transform 0.5s;
-}
-
-.sendmsg_Btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #F4C2C2;
-}
- */
 .contact_container {
   width: 100%;
   min-height: 100vh;
-  background-color: black;
-  color: white;
+  background-color:rgb(9, 17, 24);
+  color: #4f8afa;
   padding: 50px 20px;
   display: flex;
   align-items: center;
@@ -89,7 +17,7 @@ textarea{
   align-items: flex-start;
   gap: 40px;
   max-width: 1200px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 form {
@@ -101,25 +29,28 @@ input,
 textarea {
   background: transparent;
   border: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #b5cefc;
   width: 100%;
   padding: 12px 10px;
-  color: white;
+
+    color: #b5cefc;
   font-size: 16px;
   margin-bottom: 20px;
   outline: none;
   resize: none;
 }
-
+textarea {
+  padding: 0px 10px;
+}
 ::placeholder {
-  color: #dbd5d575;
+  color:#b5cefc;
 }
 
 .sendmsg_Btn {
   padding: 12px 25px;
   border: 1px solid transparent;
   border-radius: 18px;
-  background-color: #0f63c4;
+  background-color:#4f8afa;
   color: rgb(250, 248, 248);
   font-weight: 700;
   cursor: pointer;
@@ -128,7 +59,7 @@ textarea {
 
 .sendmsg_Btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #80bfe9;
+  box-shadow: 0 0 5px #4f8afa;
 }
 
 .right_contact_inner_img {
@@ -145,12 +76,10 @@ textarea {
   font-size: 3rem;
   margin-top: 20px;
   text-align: center;
+  color: #4f8afa;
 }
 
-.right_contact_top_content {
-  text-align: center;
-  margin-top: 20px;
-}
+
 
 /* Mobile responsive tweaks */
 @media screen and (max-width: 768px) {

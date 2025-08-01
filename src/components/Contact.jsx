@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../stylesheet/Contact.css";
-import contactimg from "../assets/contact.webp";
+import contactimg from "../assets/3d-female-character-holding-pencil.png";
 import { motion } from "framer-motion";
 
 
@@ -31,7 +31,12 @@ function Contact() {
   };
 
   return (
-    <div className="contact_container">
+    <>
+  <h1 className="contact_containerh1">
+                Contact Me
+              </h1>
+      <div className="contact_container">
+      
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +45,7 @@ function Contact() {
       >
        
         <div className="row contact_sub_container">
-          <div className="col-md-5">
+          <div className="col-md-4">
             <form ref={form} onSubmit={sendEmail}>
               <input
                 type="text"
@@ -70,22 +75,22 @@ function Contact() {
               </button>
             </form>
           </div>
-          <div className="col-md-5 sofiafont">
-            <div className="right_contact_inner_img">
-              <img src={contactimg} alt="" width={800} />
-            </div>
+          <div className="col-md-4 sofiafont">
+            {/* <div className="right_contact_inner_img">
+             
+              
+            </div> */}
             <div className="right_contact_top_content">
-              <h1 className="contact_containerh1">
-                Contact
-                <br />
-                ___Me
-              </h1>
-              {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque tempora earum doloribus...</p> */}
+            
+             <img src={contactimg} alt="" width={500} />
             </div>
           </div>
+          
         </div>
       </motion.div>
     </div>
+    </>
+  
   );
 }
 

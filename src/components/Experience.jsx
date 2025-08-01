@@ -114,7 +114,7 @@ export default function Experience() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.h1
+      <motion.h1 className='bluecolor'
         initial={{ y: 0, opacity: 0 }}
         animate={{ y: -50, opacity: 1 }}
         transition={{ 

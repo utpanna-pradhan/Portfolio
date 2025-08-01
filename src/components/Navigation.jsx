@@ -30,10 +30,10 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
 >
   <nav className="navbar d-flex flex-row justify-content-between" >
     <div>
-           <p class="signature-text mb-0">Utpanna</p>
+           <p class="signature-text mb-0 ps-1 ps-md-4">Utpanna</p>
     </div>
 
-      <div className="nav-container">
+      <div className="nav-container ">
        
         
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
