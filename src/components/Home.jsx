@@ -6,6 +6,22 @@ import Particles from "./Backgrounds/Particles/Particles.jsx";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Infiniteskillscroll from "./Infiniteskillscroll.jsx";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Stage } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
+import laptop from "../assets/laptop.glb";
+
+function Model(props) {
+  const { scene } = useGLTF(laptop);
+  return (
+    <primitive
+      object={scene}
+      scale={[30, 30, 30]}
+      position={[0, -1, 0]}
+      {...props}
+    />
+  );
+}
 
 export default function Home() {
   return (
@@ -32,13 +48,19 @@ export default function Home() {
           />
 
           <div className="home_Content d-flex flex-column flex-md-row justify-content-center justify-content-md-between gap-5 align-items-center mt-4 mb-4">
-              <div className="home_left_img ">
-              <img src="https://static.vecteezy.com/system/resources/thumbnails/025/279/587/small_2x/3d-laptop-and-program-code-development-web-coding-concept-coding-screen-3d-rendering-3d-rendering-of-laptop-3d-render-illustration-png.png" alt="" width={300}/>
+            <div className="home_left_img ">
+              <div className="h-[400px] w-full relative mt-28">
+                <Canvas camera={{ position: [0, 1.2, 6], fov: 25 }}>
+                  <ambientLight />
+                  <Stage>
+                    <Model />
+                  </Stage>
+                  <OrbitControls autoRotate enableZoom={false} />
+                </Canvas>
+              </div>
             </div>
             <div className=" home_right_content">
-              <h1 className="myname dancing_script">
-                Utpanna Pradhan
-              </h1>
+              <h1 className="myname dancing_script">Utpanna Pradhan</h1>
               <RotatingText
                 className="my_profession font-bold dancing_script"
                 texts={[
@@ -77,10 +99,9 @@ export default function Home() {
                 </a>
               </div>
             </div>
-          
           </div>
         </div>
-           <Infiniteskillscroll />
+        <Infiniteskillscroll />
       </motion.div>
     </div>
   );
