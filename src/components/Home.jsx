@@ -10,7 +10,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { useGLTF } from "@react-three/drei";
 import laptop from "../assets/laptop.glb";
-
+import { FaGithub } from "react-icons/fa";
 function Model(props) {
   const { scene } = useGLTF(laptop);
   return (
@@ -60,11 +60,12 @@ export default function Home() {
               </div>
             </div>
             <div className=" home_right_content">
-              <h1 className="myname dancing_script">Utpanna Pradhan</h1>
+              <h1 className="myname ">Utpanna Pradhan</h1>
               <RotatingText
-                className="my_profession font-bold dancing_script"
+                className="my_profession font-bold"
                 texts={[
                   "Frontend Developer",
+                  "Full-Stack Developer ",
                   "Technical Writer",
                   "Freelancer",
                   "Learner",
@@ -81,22 +82,37 @@ export default function Home() {
               />
               <div className="home_button mt-4 d-flex  justify-content-start align-align-items-start md:align-items-center gap-4">
                 <Link to="/contact">
-                  <button className="btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2">
+                  <motion.button className="btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    onHoverStart={() => console.log("hover started!")}
+                  >
+                      Connect with me
+                  </motion.button>
+                  {/* <button className="btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2">
                     Connect with me
-                  </button>
+                  </button> */}
                 </Link>
+                <Link
+                  to="https://github.com/utpanna-pradhan"
+                  className="footer_link "
+                  target="_blank"
+                >
+                  <FaGithub size={40} className="icon_" />
+                </Link>
+
                 {/* <Link to ="../assets/utpanna pradhan cv 2025.pdf" >
              <button className="btn btn-light text-black fw-bold fs-4 font-bold ps-4 pe-4 pt-2 pb-2">
                 CV
               </button>
              </Link> */}
-                <a
+                {/* <a
                   href="../assets/utpanna pradhan cv 2025.pdf"
                   download
                   className="btn cv_btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2"
                 >
                   CV
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

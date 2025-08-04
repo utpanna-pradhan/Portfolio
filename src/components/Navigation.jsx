@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../stylesheet/nav.css';
 import { motion } from "framer-motion";
+import user from '../assets/user.jpg'
 
 
 export default function Navigation({ darkMode, toggleDarkMode }) {
@@ -74,6 +75,13 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
           >
             Contact 
           </NavLink> 
+         <a
+                         href="../assets/utpanna pradhan cv 2025.pdf"
+                         download
+                         className=""
+                       >
+                         CV 
+                       </a>
          
         </div>
 

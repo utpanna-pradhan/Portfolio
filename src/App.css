@@ -7,6 +7,7 @@
 }
 body{
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 .pinkfontcolor{
    color:  #F4C2C2
@@ -14,7 +15,9 @@ body{
 .dancing_script{
     font-family: "Dancing Script", cursive;
 }
-
+.popinsfont{
+    font-family: "Poppins", sans-serif;
+}
 
 .app{ 
  

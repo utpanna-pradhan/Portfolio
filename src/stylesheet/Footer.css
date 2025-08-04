@@ -9,14 +9,17 @@
     cursor: pointer;
   
 }
+.footer_link:hover{
+     color: #4f8afa; 
+}
 .footerright .topbtn svg{
 
   /* background-color: #b64605 !important; */
     fill: #4f8afa !important;
-        margin-left: 5px !important;
+        /* margin-left: 5px !important; */
 }
 .footerright button:hover{
-    
+     color: #4f8afa;
     /* color: white; */
     border-color: transparent;
 }
@@ -32,4 +35,15 @@
 }
 .footer{
     color: #dde6f7;
+}
+.foooter_pagelink{
+    text-decoration: none;
+    color: #b5cefc;
+    font-weight: 700;
+     transition: transform 0.3s ease-in-out, color 0.3s;
+}
+.foooter_pagelink:hover{
+     transform: scale(1.15);
+  color: #4f8afa;
+ 
 }
