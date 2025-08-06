@@ -55,7 +55,7 @@ const handleclick = () =>{
       
 
       </div>
-      <div className='d-flex flex-column fw gap-2 justify-content-center  '>
+      <div className='d-flex flex-column fw gap-2 justify-content-center  justi'>
         <Link  to="/" className='foooter_pagelink' >Home</Link>
          <Link  to="/work" className='foooter_pagelink'>Work</Link>
           <Link  to="/blogs" className='foooter_pagelink'>Blogs</Link>
