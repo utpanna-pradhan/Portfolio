@@ -4,6 +4,7 @@
   bottom: 0;
   width: 100%;
   border-top: 0.3px solid   #b5cefc;
+  margin-top: 150px;
 }
 .footerleft:hover{
     cursor: pointer;

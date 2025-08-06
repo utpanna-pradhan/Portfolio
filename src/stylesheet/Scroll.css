@@ -1,8 +1,10 @@
 .outer {
   overflow: hidden;
-  width: 100%; 
-  margin-bottom: 150px;
-  margin-top: 50px;
+  width: 90%; 
+  /* margin-bottom: 150px;
+  margin-top: 50px; */
+  margin: auto;
+
 }
 
 .scroll-track {
@@ -11,24 +13,27 @@
 }
 
 .scroll-content {
+  margin-top: 70px;
+  margin-bottom: 50px;
   display: flex;
-  gap: 25px;
+  gap: 50px;
   padding: 0px;
   animation: scroll 30s linear infinite;
 }
 
 .scroll-content:hover {
   animation-play-state: paused;
+  
 }
 
 .scroll_img{
-  width: 150px;
+  width: 130px;
   height: 150px;
   border-radius: 18px;
   /* border: 1px solid  #f8ddb5 ; 
   box-shadow: 5px 0px 0px #b64605 ; */
   border-bottom: 1px solid  #4f8afa;
-  border-top: 1px solid  #4f8afa;
+  border-top: 1px solid  rgb(79, 138, 250);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,9 +41,24 @@
   
   object-fit: contain;
   flex-shrink: 0; 
+  transition: transform 0.3s ease-in-out;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-
+.scroll_img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0px 8px 12px #fff;
+  box-shadow: rgba(79, 138, 250,0.35) 0px 4px 12px;
+}
+.sub_Skill{
+  color: #cfd4df71;
+    font-size: 0.9rem;
+  font-weight: 500;
+}
+.skills_heading{
+  margin-top: 65px;
+  color:  #4f8afa;
+}
 @keyframes scroll {
   0% {
     transform: translateX(0%);

@@ -12,14 +12,17 @@
 .home_Content{
 	position: absolute;
 	z-index: 1;
-	top: 40%;
+	top: 50%;
 	left:5%; 
 	transform: translateY(-50%);
   max-width: 90%;
   color:#dde6f7;
   /* color:  #4f8afa; */
+ 
 }
-
+.main_home{
+  margin-bottom: 150px;
+}
 .myname {
   font-size: clamp(2.8rem, 6vw, 5rem);
   color:  #4f8afa;
@@ -47,6 +50,14 @@ order: 2;
 canvas{
   height: 250px;
 }
+
+.scrolltxt{
+  color: #cfd4df71;
+  font-size: 1.1rem;
+  font-weight: 500;
+ padding-top: 20px;
+}
+
 @media screen and (max-width: 770px) {
   .home_Content {
       top: 59%;

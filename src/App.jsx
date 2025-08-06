@@ -15,7 +15,8 @@ export default function App() {
 
   return (
     <div className="app" >
-      <Navbar  />
+   
+           <Navbar  />
       
       <main className="main-content ">
         <Routes>
@@ -27,10 +28,9 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-{/* 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
-      </footer> */}
+       
+   
+
       <Footer />
     </div>
   );

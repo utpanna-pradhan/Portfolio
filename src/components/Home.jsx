@@ -11,6 +11,8 @@ import { OrbitControls, Stage } from "@react-three/drei";
 import { useGLTF } from "@react-three/drei";
 import laptop from "../assets/laptop.glb";
 import { FaGithub } from "react-icons/fa";
+import { FaArrowCircleDown } from "react-icons/fa";
+
 function Model(props) {
   const { scene } = useGLTF(laptop);
   return (
@@ -25,7 +27,7 @@ function Model(props) {
 
 export default function Home() {
   return (
-    <div className="mt-4">
+    <div className="mt-4 main_home">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -82,12 +84,13 @@ export default function Home() {
               />
               <div className="home_button mt-4 d-flex  justify-content-start align-align-items-start md:align-items-center gap-4">
                 <Link to="/contact">
-                  <motion.button className="btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2"
+                  <motion.button
+                    className="btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     onHoverStart={() => console.log("hover started!")}
                   >
-                      Connect with me
+                    Connect with me
                   </motion.button>
                   {/* <button className="btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2">
                     Connect with me
@@ -117,7 +120,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Infiniteskillscroll />
+
+        <div className="text-center mt-4 mb-4 scrolltxt">
+          <small className=" text-center w-full">
+            Scroll down <FaArrowCircleDown />
+          </small>
+        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <Infiniteskillscroll />
+        </motion.div>
       </motion.div>
     </div>
   );
