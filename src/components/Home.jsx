@@ -49,7 +49,7 @@ export default function Home() {
             disableRotation={false}
           />
 
-          <div className="home_Content d-flex flex-column flex-md-row justify-content-center justify-content-md-between gap-5 align-items-center mt-4 mb-4">
+          <div className="home_Content d-flex flex-column flex-md-row justify-content-center justify-content-md-between gap-4 align-items-center mt-4 mb-4">
             <div className="home_left_img ">
               <div className="h-[400px] w-full relative mt-28">
                 <Canvas camera={{ position: [0, 1.2, 6], fov: 25 }}>
@@ -61,6 +61,9 @@ export default function Home() {
                 </Canvas>
               </div>
             </div>
+
+
+            
             <div className=" home_right_content">
               <h1 className="myname ">Utpanna Pradhan</h1>
               <RotatingText
@@ -92,9 +95,7 @@ export default function Home() {
                   >
                     Connect with me
                   </motion.button>
-                  {/* <button className="btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2">
-                    Connect with me
-                  </button> */}
+                
                 </Link>
                 <Link
                   to="https://github.com/utpanna-pradhan"
@@ -104,18 +105,7 @@ export default function Home() {
                   <FaGithub size={40} className="icon_" />
                 </Link>
 
-                {/* <Link to ="../assets/utpanna pradhan cv 2025.pdf" >
-             <button className="btn btn-light text-black fw-bold fs-4 font-bold ps-4 pe-4 pt-2 pb-2">
-                CV
-              </button>
-             </Link> */}
-                {/* <a
-                  href="../assets/utpanna pradhan cv 2025.pdf"
-                  download
-                  className="btn cv_btn  fw-bold fs-5 ps-3 pe-3 pt-2 pb-2"
-                >
-                  CV
-                </a> */}
+              
               </div>
             </div>
           </div>

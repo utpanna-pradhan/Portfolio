@@ -5,6 +5,10 @@
   width: 100%;
   border-top: 0.3px solid   #b5cefc;
   margin-top: 150px;
+   color: #cfdef8 ;
+    background: rgba(0, 0, 0, 0.2); 
+     backdrop-filter: blur(30px); 
+    
 }
 .footerleft:hover{
     cursor: pointer;

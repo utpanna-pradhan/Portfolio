@@ -15,7 +15,7 @@
 	top: 50%;
 	left:5%; 
 	transform: translateY(-50%);
-  max-width: 90%;
+  max-width: 95%;
   color:#dde6f7;
   /* color:  #4f8afa; */
  
@@ -24,13 +24,13 @@
   margin-bottom: 150px;
 }
 .myname {
-  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-size: clamp(2.4rem, 6vw, 4rem);
   color:  #4f8afa;
    text-shadow: 1px 1px 2px #dde6f7; 
 }
 
 .my_profession {
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 .home_button button{
 	background-color: #4f8afa ;
@@ -41,11 +41,30 @@
 	background-color:#dde6f7;
 	color:  #4f8afa;
 }
-.home_left_img{
+.home_left_img {
   order: 1;
+
+  padding: 15px 30px;
+  position: relative;
+  z-index: 1; /* keep content above glow */
+  overflow: visible; /* important for glow outside */
+  /* border-radius: 1.5rem;
+ 
+  box-shadow: 0 0 20px rgba(79, 138, 250, 0.3); */
 }
+
+
+
+
+
 .home_right_content{
 order: 2;
+border-radius: 1.5rem;
+   max-width: 95%;
+padding: 2rem;
+  /* 
+  box-shadow: 0 0 15px rgba(79, 138, 250, 0.3); */
+ 
 }
 canvas{
   height: 250px;
@@ -81,3 +100,42 @@ order: 1;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home_Content {
+   position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  padding: 1rem;
+  border-radius: 1.5rem;
+
+
+  box-shadow:
+    5px 5px 5px  rgba(79, 139, 250, 0.623),   /* right-bottom shadow */
+    -5px -5px 10px  rgba(79, 139, 250, 0.219), /* top-left highlight */
+    inset 0 1px 2px rgba(79, 139, 250, 0.075); /* subtle inner shine */
+
+  border: 1px solid  rgba(79, 139, 250, 0.164);
+  backdrop-filter: blur(1.5px);
+  transition: all 0.3s ease;
+}
+.home_Content:hover {
+  transform: translateY(-52%) scale(1.01);
+  box-shadow:
+   5px 5px 5px  rgba(79, 139, 250, 0.623),   /* right-bottom shadow */
+    -5px -5px 10px  rgba(79, 139, 250, 0.219), /* top-left highlight */
+    inset 0 1px 2px rgba(79, 139, 250, 0.075); /* subtle inner shine */
+}
