@@ -5,18 +5,28 @@
   border-bottom: 0.3px solid #b5cefc;
 
   position: fixed;
-  width: 100vw;
+  width: 100%;
   top: 0;
   z-index: 1000;
-  padding: 8px;
-  backdrop-filter: blur(10px);
+   padding: 12px 2rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(26, 161, 240, 0.226);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 0px;
 }
 .signature-text {
   font-family: "Great Vibes", cursive;
   font-size: 2.4em;
 
   color: #4f8afa;
-  text-shadow: 0.5px 0.5px 0.5px #b5cefc;
+  /* text-shadow: 0.5px 0.5px 0.5px #b5cefc; */
+   text-shadow: 0 0 10px rgba(79, 138, 250, 0.5);
+  animation: glowPulse 3s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 10px rgba(79, 138, 250, 0.4); }
+  50% { text-shadow: 0 0 20px rgba(79, 138, 250, 0.8); }
 }
 .nav-container {
   display: flex;
@@ -32,13 +42,18 @@
   flex-direction: row;
   gap: 2rem;
   transition: all 0.3s ease-in-out;
+  
+  
 }
 
 .nav-links a {
-  color: #faf9f6;
-  font-size: 19px;
+color: #faf9f6;
+  font-size: 18px;
   text-decoration: none;
-  transition: transform 0.3s ease-in-out, color 0.3s;
+   position: relative;
+    padding: 5px 0;
+  transition: color 0.3s ease;
+  /* transition: transform 0.3s ease-in-out, color 0.3s; */
 }
 
 .nav-links a:hover {
@@ -52,8 +67,11 @@
   color: #4f8afa;
   text-shadow: 0.5px 0.5px 0.5px #b5cefc;
   border-bottom: 2px solid ;
-  /* text-decoration: underline;
-  padding: 0px 0px 5px 0px; */
+
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
 }
 
 /* Hamburger Button */
@@ -66,14 +84,19 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
+.hamburger:hover {
+  transform: scale(1.1);
+  color: #4f8afa;
+}
 /* Responsive: Mobile */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .hamburger {
     display: block;
     
   }
-
+.navbar {
+  padding: 5px;
+}
   .nav-links {
     position: absolute;
     top: 90px;
@@ -94,4 +117,25 @@
 
   padding: 15px 20px;
 }
+.nav-container {
+  padding: 18px 40px;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

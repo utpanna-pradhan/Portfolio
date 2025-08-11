@@ -1,141 +1,112 @@
-.home{
-	  background-color: black;
-	  height: 100vh;
-	  	display: flex;
-	
-
-	align-items: center;
-	margin: 0 auto;
-	padding: 50px;
-} 
-
-.home_Content{
-	position: absolute;
-	z-index: 1;
-	top: 50%;
-	left:5%; 
-	transform: translateY(-50%);
-  max-width: 95%;
-  color:#dde6f7;
-  /* color:  #4f8afa; */
- 
+.home {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  
 }
-.main_home{
-  margin-bottom: 150px;
+
+.bg_particle {
+  width: 100%;
+  height: 100vh; 
+  position: relative;
 }
+
+.home_Content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 34px 84px 31px 104px / 0px 62px 0px 74px;
+  box-shadow:
+    5px 5px 5px  rgba(79, 139, 250, 0.623),   
+    -5px -5px 10px  rgba(79, 139, 250, 0.219), 
+    inset 0 1px 2px rgba(79, 139, 250, 0.075); 
+  border: 1px solid rgba(79, 139, 250, 0.164);
+  backdrop-filter: blur(1.5px);
+  max-width: 1200px;
+  margin: 0 auto;
+   color:#dde6f7;
+}
+
+.home_left_img {
+  flex: 1 1 300px;
+  padding: 15px;
+  min-width: 250px;
+}
+
+.home_right_content {
+  flex: 1 1 300px;
+  padding: 1rem;
+  max-width: 500px;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 400px;
+}
+
 .myname {
-  font-size: clamp(2.4rem, 6vw, 4rem);
-  color:  #4f8afa;
-   text-shadow: 1px 1px 2px #dde6f7; 
+  font-size: clamp(2rem, 4vw, 4rem);
+  color: #4f8afa;
+  text-shadow: 1px 1px 2px #dde6f7;
 }
 
 .my_profession {
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
-}
-.home_button button{
-	background-color: #4f8afa ;
-	color:#dde6f7;
-	
-}
-.cv_btn{
-	background-color:#dde6f7;
-	color:  #4f8afa;
-}
-.home_left_img {
-  order: 1;
-
-  padding: 15px 30px;
-  position: relative;
-  z-index: 1; /* keep content above glow */
-  overflow: visible; /* important for glow outside */
-  /* border-radius: 1.5rem;
- 
-  box-shadow: 0 0 20px rgba(79, 138, 250, 0.3); */
+  font-size: clamp(1.2rem, 2.5vw, 2.2rem);
 }
 
-
-
-
-
-.home_right_content{
-order: 2;
-border-radius: 1.5rem;
-   max-width: 95%;
-padding: 2rem;
-  /* 
-  box-shadow: 0 0 15px rgba(79, 138, 250, 0.3); */
- 
-}
-canvas{
-  height: 250px;
+.home_button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.scrolltxt{
+.home_button button {
+  background-color: #4f8afa;
+  color: #dde6f7;
+}
+
+.cv_btn {
+  background-color: #dde6f7;
+  color: #4f8afa;
+}
+
+.scrolltxt {
   color: #cfd4df71;
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   font-weight: 500;
- padding-top: 20px;
+  padding-top: 20px;
+  text-align: center;
 }
-
+.topcurve{
+  margin-bottom: -50px;
+}
 @media screen and (max-width: 770px) {
   .home_Content {
-      top: 59%;
-    left: 21%;
-      max-width: 100%;
-    transform: translateY(-40%);
-  }
-
-  .home_button {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: center;
+    text-align: center;
   }
- .home_left_img{
-  order: 2;
-}
-.home_right_content{
-order: 1;
-}
-
+  .home_button {
+    justify-content: center;
+  }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.home_Content {
-   position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  padding: 1rem;
-  border-radius: 1.5rem;
-
-
-  box-shadow:
-    5px 5px 5px  rgba(79, 139, 250, 0.623),   /* right-bottom shadow */
-    -5px -5px 10px  rgba(79, 139, 250, 0.219), /* top-left highlight */
-    inset 0 1px 2px rgba(79, 139, 250, 0.075); /* subtle inner shine */
-
-  border: 1px solid  rgba(79, 139, 250, 0.164);
-  backdrop-filter: blur(1.5px);
-  transition: all 0.3s ease;
-}
-.home_Content:hover {
-  transform: translateY(-52%) scale(1.01);
-  box-shadow:
-   5px 5px 5px  rgba(79, 139, 250, 0.623),   /* right-bottom shadow */
-    -5px -5px 10px  rgba(79, 139, 250, 0.219), /* top-left highlight */
-    inset 0 1px 2px rgba(79, 139, 250, 0.075); /* subtle inner shine */
+.particles_background {
+  position: fixed; /* stay in the background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: -1;  */
 }
